@@ -758,34 +758,107 @@ Build these projects as you progress through the syllabus:
 ## Resources
 
 ### Documentation
-- [MDN Web Docs — HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) — The most comprehensive and accurate HTML reference
-- [W3Schools HTML Tutorial](https://www.w3schools.com/html/) — Beginner-friendly tutorials with a "Try It Yourself" editor
-- [HTML Living Standard](https://html.spec.whatwg.org/) — The official HTML specification
+
+| Resource | Why It's Great |
+|----------|---------------|
+| [MDN — Learn HTML](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content) | The gold standard. Structured curriculum from Mozilla with interactive examples. Start here for any topic |
+| [MDN — HTML Element Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) | Complete reference for every HTML element — attributes, examples, and browser support |
+| [web.dev — Learn HTML](https://web.dev/learn/html) | Google's modern HTML course. Covers document structure, meta tags, semantic HTML with real-world focus |
+| [W3Schools HTML Tutorial](https://www.w3schools.com/html/) | "Try It Yourself" editor on every page — great for quick experimentation |
+| [HTML Living Standard](https://html.spec.whatwg.org/) | The official spec. Use when you need the definitive answer on how something should work |
 
 ### Interactive Courses (Free)
-- [freeCodeCamp — Responsive Web Design](https://www.freecodecamp.org/learn/2022/responsive-web-design/) — Project-based curriculum with certification
-- [Codecademy — Learn HTML](https://www.codecademy.com/learn/learn-html) — Interactive lessons with in-browser coding
-- [The Odin Project — HTML Foundations](https://www.theodinproject.com/paths/foundations/courses/foundations) — Open-source, community-driven curriculum
-- [Scrimba — HTML & CSS](https://scrimba.com/learn-html-and-css) — Interactive video-based learning (backed by Mozilla)
 
-### YouTube Channels
-- [Traversy Media](https://www.youtube.com/@traversymedia) — Clear, practical tutorials for beginners
-- [The Net Ninja](https://www.youtube.com/@NetNinja) — Well-structured HTML & CSS tutorial series
-- [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified) — Concise, beginner-friendly explanations
-- [Kevin Powell](https://www.youtube.com/@KevinPowell) — Deep dives into HTML and CSS
+| Course | What Makes It Special |
+|--------|----------------------|
+| [freeCodeCamp — Responsive Web Design](https://www.freecodecamp.org/learn/2022/responsive-web-design/) | 100% free. Build 5 certification projects. No videos — you learn by writing code |
+| [The Odin Project — HTML Foundations](https://www.theodinproject.com/paths/foundations/courses/foundations) | Open-source curriculum used by thousands. Teaches you to learn like a developer, not just follow tutorials |
+| [Codecademy — Learn HTML](https://www.codecademy.com/learn/learn-html) | In-browser coding with instant feedback. Best for absolute beginners who want hand-holding |
+| [Scrimba — HTML & CSS](https://scrimba.com/learn-html-and-css) | Pause any video and edit the instructor's code directly. Backed by Mozilla's MDN curriculum |
+
+### YouTube (Specific Courses, Not Just Channels)
+
+| Video / Playlist | Duration | Why Watch This One |
+|-----------------|----------|-------------------|
+| [Traversy Media — HTML Crash Course](https://www.youtube.com/@traversymedia) | ~1 hour | Best first video. Covers everything a beginner needs in one sitting |
+| [Programming with Mosh — HTML Tutorial](https://www.youtube.com/c/programmingwithmosh) | ~1 hour | Professional instructor, clean explanations. Covers HTTP, formatting, images, hyperlinks |
+| [The Net Ninja — HTML & CSS Crash Course](https://www.youtube.com/@NetNinja) | Series | Step-by-step playlist. Each video is one focused topic — easy to follow |
+| [Web Dev Simplified — HTML & CSS Full Course](https://www.youtube.com/@WebDevSimplified) | ~2 hours | Beginner to intermediate in one video. Great for a weekend binge |
+| [Kevin Powell](https://www.youtube.com/@KevinPowell) | Various | Best for HTML + CSS integration. Deep dives into semantic HTML and accessibility |
 
 ### Roadmaps
-- [roadmap.sh — HTML](https://roadmap.sh/html) — Interactive learning path with progress tracking
 
-### Practice & Challenges
-- [Frontend Mentor](https://www.frontendmentor.io/) — Real-world projects with design files
-- [freeCodeCamp Projects](https://www.freecodecamp.org/learn/2022/responsive-web-design/) — Certification projects to build
+| Resource | What It Does |
+|----------|-------------|
+| [roadmap.sh — HTML](https://roadmap.sh/html) | Interactive learning path — click each topic to see resources. Track your progress |
 
-### Tools
-- [VS Code](https://code.visualstudio.com/) — Recommended code editor
-- [W3C Markup Validator](https://validator.w3.org/) — Validate your HTML
-- [Can I Use](https://caniuse.com/) — Check browser support for HTML features
-- [Chrome DevTools](https://developer.chrome.com/docs/devtools/) — Inspect and debug your HTML
+### Practice & Build Real Projects
+
+| Platform | What You Get |
+|----------|-------------|
+| [Frontend Mentor](https://www.frontendmentor.io/) | Professional Figma designs to build. Real-world workflow. Community code reviews |
+| [freeCodeCamp Projects](https://www.freecodecamp.org/learn/2022/responsive-web-design/) | 5 certification projects (Survey Form, Tribute Page, etc.) — build them to earn a certificate |
+| [DevChallenges](https://devchallenges.io/) | Front-end projects with varying difficulty. Great for building a portfolio |
+| [Frontend Practice](https://www.frontendpractice.com/) | Recreate real, beautifully designed websites. Learn by reverse-engineering actual sites |
+
+### Code Editors & Extensions
+
+| Tool | Why You Need It |
+|------|----------------|
+| [VS Code](https://code.visualstudio.com/) | The most popular code editor. Free, fast, huge extension ecosystem |
+| [Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) | Auto-refreshes the browser every time you save. No more manual refreshing |
+| [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag) | Rename an opening tag and the closing tag updates automatically. Prevents mismatched tags |
+| [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css) | Autocompletes class names, IDs, and CSS properties inside HTML files |
+| [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) | Auto-formats your HTML on save. Consistent, clean code every time |
+| [Axe Accessibility Linter](https://marketplace.visualstudio.com/items?itemName=deque-systems.vscode-axe-linter) | Catches accessibility issues in real-time as you type. Learn a11y by doing |
+
+> [!TIP]
+> After installing VS Code, install these extensions in order: **Live Server** (see changes instantly) → **Prettier** (clean code) → **Auto Rename Tag** (fewer bugs). Add the others as you progress.
+
+### Online Code Playgrounds
+
+| Playground | Best For |
+|-----------|---------|
+| [CodePen](https://codepen.io/) | Quick experiments. Huge community — search for any HTML pattern and see live examples |
+| [JSFiddle](https://jsfiddle.net/) | Minimal interface. Great for testing snippets and sharing code with others |
+| [Playcode](https://playcode.io/) | Fastest live preview. AI-powered suggestions. Modern editor feel |
+
+### Validation & Testing Tools
+
+| Tool | What It Checks |
+|------|---------------|
+| [W3C Markup Validator](https://validator.w3.org/) | Official HTML validator. Paste your URL or code — it finds every error and explains the fix |
+| [Can I Use](https://caniuse.com/) | Check if an HTML feature works in all browsers before using it |
+| [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/) | Built into Chrome DevTools (F12 → Lighthouse tab). Scores your page on Performance, Accessibility, SEO, and Best Practices |
+| [WebPageTest](https://www.webpagetest.org/) | Deep performance analysis. Test load times across different devices and network speeds |
+| [Chrome DevTools](https://developer.chrome.com/docs/devtools/) | Right-click → Inspect on any website. The #1 tool every developer uses daily |
+
+### Accessibility Tools
+
+| Tool | What It Does |
+|------|-------------|
+| [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) | Enter two colors → instantly see if they pass WCAG AA/AAA contrast requirements |
+| [Coolors Contrast Checker](https://coolors.co/contrast-checker) | Beautiful UI. Shows pass/fail for normal text, large text, and UI components |
+| [WAVE Web Accessibility Evaluator](https://wave.webaim.org/) | Paste any URL — it highlights every accessibility issue directly on the page |
+| [Accessibility Checker](https://www.accessibilitychecker.org/) | Full WCAG 2.2 compliance scan for any website. Detailed reports with fix suggestions |
+
+### Meta Tags & SEO Tools
+
+| Tool | What It Does |
+|------|-------------|
+| [OpenGraph.xyz](https://www.opengraph.xyz/) | Preview how your page looks when shared on Facebook, Twitter, LinkedIn, Discord, Slack |
+| [RealFaviconGenerator](https://realfavicongenerator.net/) | Generate favicons for every platform (desktop, iOS, Android) from one image |
+| [Favicon.io](https://favicon.io/) | Create favicons from text, emoji, or image in seconds. Download all sizes at once |
+| [Google Rich Results Test](https://search.google.com/test/rich-results) | Check if your HTML structured data (Schema.org) will show rich results in Google |
+| [Open Graph Protocol Spec](https://ogp.me/) | Official reference for og: meta tags. Bookmark this when working on Phase 7 |
+
+### Cheat Sheets
+
+| Cheat Sheet | Format |
+|-------------|--------|
+| [MDN HTML Cheatsheet](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Cheatsheet) | Official Mozilla quick reference with copy-paste code snippets |
+| [htmlcheatsheet.com](https://htmlcheatsheet.com/) | Interactive — has a live preview editor built into the cheat sheet |
+| [QuickRef.ME — HTML](https://quickref.me/html.html) | Clean, scannable layout. All common tags on one page |
 
 ---
 
