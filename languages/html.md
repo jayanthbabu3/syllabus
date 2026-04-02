@@ -2,12 +2,15 @@
 
 A complete, structured learning path for HTML — from writing your first tag to building accessible, SEO-friendly web pages.
 
-**Estimated Duration:** 4-6 weeks (learning part-time)
+![Difficulty: Beginner](https://img.shields.io/badge/Difficulty-Beginner-green)
+![Estimated Duration: 4-6 Weeks](https://img.shields.io/badge/Duration-4--6%20Weeks-blue)
+![Topics: 10 Phases](https://img.shields.io/badge/Topics-10%20Phases-orange)
 
 ---
 
 ## Table of Contents
 
+- [Prerequisites](#prerequisites)
 - [Phase 1: Getting Started](#phase-1-getting-started)
 - [Phase 2: HTML Basics](#phase-2-html-basics)
 - [Phase 3: Links, Images & Media](#phase-3-links-images--media)
@@ -18,15 +21,39 @@ A complete, structured learning path for HTML — from writing your first tag to
 - [Phase 8: Advanced HTML](#phase-8-advanced-html)
 - [Phase 9: Accessibility](#phase-9-accessibility)
 - [Phase 10: Best Practices & SEO](#phase-10-best-practices--seo)
+- [Common Mistakes](#common-mistakes)
+- [Interview Questions](#interview-questions)
 - [Practice Projects](#practice-projects)
 - [Resources](#resources)
 
 ---
 
+## Prerequisites
+
+> [!NOTE]
+> HTML requires **zero programming experience**. It's the perfect starting point for anyone entering web development.
+
+- A computer (Windows, Mac, or Linux)
+- A web browser (Chrome recommended)
+- A text editor ([VS Code](https://code.visualstudio.com/) — free)
+- Curiosity and willingness to practice
+
+---
+
 ## Phase 1: Getting Started
+
+![Phase](https://img.shields.io/badge/Phase-1%2F10-blue)
+![Difficulty: Beginner](https://img.shields.io/badge/Difficulty-Beginner-green)
+![Time: 3-4 Hours](https://img.shields.io/badge/Time-3--4%20Hours-yellow)
 
 > Understand what HTML is and write your first web page.
 
+### Learning Outcomes
+- [ ] Explain what HTML is and its role in web development
+- [ ] Set up a code editor and browser dev tools
+- [ ] Write and view a complete HTML page from scratch
+
+### Topics
 - What is HTML and why it matters
 - Brief history of HTML (HTML4 → XHTML → HTML5)
 - How the web works (browser, server, request/response)
@@ -39,12 +66,45 @@ A complete, structured learning path for HTML — from writing your first tag to
   - The boilerplate template
 - Writing and viewing your first HTML page
 
+> [!TIP]
+> In VS Code, type `!` and press Tab to instantly generate the full HTML boilerplate. This shortcut alone will save you hours.
+
+<details>
+<summary><strong>HTML Boilerplate Reference</strong></summary>
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Page</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>This is my first HTML page.</p>
+</body>
+</html>
+```
+
+</details>
+
 ---
 
 ## Phase 2: HTML Basics
 
+![Phase](https://img.shields.io/badge/Phase-2%2F10-blue)
+![Difficulty: Beginner](https://img.shields.io/badge/Difficulty-Beginner-green)
+![Time: 5-6 Hours](https://img.shields.io/badge/Time-5--6%20Hours-yellow)
+
 > Learn the fundamental building blocks of every web page.
 
+### Learning Outcomes
+- [ ] Identify HTML elements, tags, and attributes
+- [ ] Use headings, paragraphs, and text formatting correctly
+- [ ] Understand the difference between block and inline elements
+
+### Topics
 - HTML elements, tags, and attributes
   - Opening tags, closing tags, self-closing tags
   - Attribute syntax (`name="value"`)
@@ -65,12 +125,43 @@ A complete, structured learning path for HTML — from writing your first tag to
   - `<span>` (inline container)
 - Nesting elements properly
 
+> [!IMPORTANT]
+> `<strong>` means **semantically important** (screen readers emphasize it). `<b>` is just **visual bold**. Always prefer `<strong>` when the text is truly important.
+
+<details>
+<summary><strong>Quick Reference: Text Formatting Tags</strong></summary>
+
+| Tag | Purpose | Example |
+|-----|---------|---------|
+| `<strong>` | Important text (bold) | **important** |
+| `<em>` | Emphasized text (italic) | *emphasized* |
+| `<mark>` | Highlighted text | highlighted |
+| `<del>` | Deleted text | ~~deleted~~ |
+| `<ins>` | Inserted text | underlined |
+| `<sub>` | Subscript | H₂O |
+| `<sup>` | Superscript | x² |
+| `<code>` | Inline code | `code` |
+| `<pre>` | Preformatted text | preserves spacing |
+
+</details>
+
 ---
 
 ## Phase 3: Links, Images & Media
 
+![Phase](https://img.shields.io/badge/Phase-3%2F10-blue)
+![Difficulty: Beginner](https://img.shields.io/badge/Difficulty-Beginner-green)
+![Time: 4-5 Hours](https://img.shields.io/badge/Time-4--5%20Hours-yellow)
+
 > Connect pages together and add visual content.
 
+### Learning Outcomes
+- [ ] Create hyperlinks to external sites, internal pages, and page sections
+- [ ] Add images with proper alt text
+- [ ] Embed audio and video content
+- [ ] Understand relative vs absolute file paths
+
+### Topics
 - Hyperlinks with `<a>`
   - `href` attribute (URLs, relative paths)
   - `target="_blank"` to open in new tab
@@ -92,12 +183,40 @@ A complete, structured learning path for HTML — from writing your first tag to
   - Parent directory (`../`)
   - Root-relative paths (`/`)
 
+> [!WARNING]
+> Always add `rel="noopener noreferrer"` when using `target="_blank"`. Without it, the opened page can access your page via `window.opener` — a security risk.
+
+<details>
+<summary><strong>Quick Reference: Image Formats</strong></summary>
+
+| Format | Best For | Transparency | Animation |
+|--------|----------|:------------:|:---------:|
+| JPEG | Photos, complex images | No | No |
+| PNG | Graphics, screenshots | Yes | No |
+| GIF | Simple animations | Yes | Yes |
+| WebP | Modern replacement for JPEG/PNG | Yes | Yes |
+| SVG | Icons, logos, illustrations | Yes | Yes |
+
+> Use **WebP** for the best file size. Use **SVG** for icons and logos that need to scale.
+
+</details>
+
 ---
 
 ## Phase 4: Lists & Tables
 
+![Phase](https://img.shields.io/badge/Phase-4%2F10-blue)
+![Difficulty: Beginner](https://img.shields.io/badge/Difficulty-Beginner-green)
+![Time: 3-4 Hours](https://img.shields.io/badge/Time-3--4%20Hours-yellow)
+
 > Organize and display structured data.
 
+### Learning Outcomes
+- [ ] Create ordered, unordered, and description lists
+- [ ] Build tables with headers, body, and footer sections
+- [ ] Merge table cells using colspan and rowspan
+
+### Topics
 - Unordered lists (`<ul>`, `<li>`)
 - Ordered lists (`<ol>`, `<li>`)
   - `type` attribute (1, A, a, I, i)
@@ -112,12 +231,26 @@ A complete, structured learning path for HTML — from writing your first tag to
   - `<caption>` for table titles
   - When to use tables (tabular data) vs when not to (layout)
 
+> [!CAUTION]
+> Never use `<table>` for page layout. Tables are for **tabular data only** (like spreadsheets, schedules, comparisons). Use CSS Flexbox or Grid for layout.
+
 ---
 
 ## Phase 5: Forms & User Input
 
+![Phase](https://img.shields.io/badge/Phase-5%2F10-blue)
+![Difficulty: Intermediate](https://img.shields.io/badge/Difficulty-Intermediate-yellow)
+![Time: 6-8 Hours](https://img.shields.io/badge/Time-6--8%20Hours-yellow)
+
 > Build interactive forms to collect user data.
 
+### Learning Outcomes
+- [ ] Build a complete form with various input types
+- [ ] Apply HTML5 validation (required, pattern, min/max)
+- [ ] Group related fields with fieldset and legend
+- [ ] Understand GET vs POST methods
+
+### Topics
 - The `<form>` element
   - `action` attribute (where to send data)
   - `method` attribute (`GET` vs `POST`)
@@ -157,12 +290,49 @@ A complete, structured learning path for HTML — from writing your first tag to
   - `placeholder` text
 - Common input attributes: `name`, `value`, `id`, `disabled`, `readonly`, `autofocus`
 
+> [!TIP]
+> Always use `<label>` with every input. Clicking the label focuses the input — better UX for everyone, especially mobile users.
+
+<details>
+<summary><strong>Quick Reference: All Input Types</strong></summary>
+
+| Input Type | Purpose | Example Use |
+|------------|---------|-------------|
+| `text` | Single-line text | Name, username |
+| `password` | Hidden text | Password fields |
+| `email` | Email with validation | Email address |
+| `number` | Numeric input | Age, quantity |
+| `tel` | Phone number | Contact number |
+| `url` | URL with validation | Website link |
+| `search` | Search field | Search bar |
+| `date` | Date picker | Birth date |
+| `time` | Time picker | Appointment time |
+| `datetime-local` | Date + time | Event scheduling |
+| `checkbox` | Multiple selections | Preferences |
+| `radio` | Single selection | Gender, plan type |
+| `file` | File upload | Profile picture |
+| `range` | Slider | Volume, rating |
+| `color` | Color picker | Theme color |
+| `hidden` | Hidden data | Form tokens |
+
+</details>
+
 ---
 
 ## Phase 6: Semantic HTML
 
+![Phase](https://img.shields.io/badge/Phase-6%2F10-blue)
+![Difficulty: Intermediate](https://img.shields.io/badge/Difficulty-Intermediate-yellow)
+![Time: 4-5 Hours](https://img.shields.io/badge/Time-4--5%20Hours-yellow)
+
 > Write meaningful HTML that browsers and screen readers understand.
 
+### Learning Outcomes
+- [ ] Replace generic `<div>` elements with proper semantic tags
+- [ ] Structure a page using header, nav, main, section, article, aside, footer
+- [ ] Explain why semantic HTML improves SEO and accessibility
+
+### Topics
 - What is semantic HTML and why it matters
   - Improved accessibility
   - Better SEO
@@ -186,12 +356,52 @@ A complete, structured learning path for HTML — from writing your first tag to
   - `<blockquote>` and `<cite>` — quotations
 - When to use `<div>` vs semantic elements
 
+> [!IMPORTANT]
+> Think of `<div>` as a last resort. If there's a semantic element that describes your content (`<nav>`, `<article>`, `<aside>`, etc.), always use that instead.
+
+<details>
+<summary><strong>Visual: Semantic Page Structure</strong></summary>
+
+```
+┌──────────────────────────────────┐
+│            <header>              │
+│   ┌──────────────────────────┐   │
+│   │          <nav>           │   │
+│   └──────────────────────────┘   │
+├──────────────────────────────────┤
+│            <main>                │
+│   ┌───────────────┐ ┌────────┐  │
+│   │  <article>    │ │<aside> │  │
+│   │  ┌─────────┐  │ │        │  │
+│   │  │<section>│  │ │        │  │
+│   │  └─────────┘  │ │        │  │
+│   │  ┌─────────┐  │ │        │  │
+│   │  │<section>│  │ │        │  │
+│   │  └─────────┘  │ │        │  │
+│   └───────────────┘ └────────┘  │
+├──────────────────────────────────┤
+│            <footer>              │
+└──────────────────────────────────┘
+```
+
+</details>
+
 ---
 
 ## Phase 7: HTML Head & Meta Tags
 
+![Phase](https://img.shields.io/badge/Phase-7%2F10-blue)
+![Difficulty: Intermediate](https://img.shields.io/badge/Difficulty-Intermediate-yellow)
+![Time: 3-4 Hours](https://img.shields.io/badge/Time-3--4%20Hours-yellow)
+
 > Control how your page appears in browsers, search engines, and social media.
 
+### Learning Outcomes
+- [ ] Configure essential meta tags for every page
+- [ ] Set up Open Graph tags for social media previews
+- [ ] Understand defer vs async for script loading
+
+### Topics
 - The `<head>` section
 - `<title>` — page title (shown in browser tab)
 - `<meta>` tags
@@ -215,12 +425,44 @@ A complete, structured learning path for HTML — from writing your first tag to
   - `defer` vs `async` attributes
   - Where to place script tags
 
+> [!TIP]
+> Always include these 3 meta tags in every page — they're non-negotiable:
+> ```html
+> <meta charset="UTF-8">
+> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+> <meta name="description" content="Your page description here">
+> ```
+
+<details>
+<summary><strong>Quick Reference: Script Loading — defer vs async</strong></summary>
+
+| Attribute | HTML Parsing | Script Download | Script Execution |
+|-----------|:----------:|:----------:|:----------:|
+| `<script>` | Pauses | Downloads | Runs immediately |
+| `<script defer>` | Continues | Downloads in parallel | Runs after HTML is parsed |
+| `<script async>` | Continues | Downloads in parallel | Runs as soon as downloaded |
+
+**Rule of thumb:** Use `defer` for most scripts. Use `async` only for independent scripts (analytics, ads).
+
+</details>
+
 ---
 
 ## Phase 8: Advanced HTML
 
+![Phase](https://img.shields.io/badge/Phase-8%2F10-blue)
+![Difficulty: Advanced](https://img.shields.io/badge/Difficulty-Advanced-red)
+![Time: 6-8 Hours](https://img.shields.io/badge/Time-6--8%20Hours-yellow)
+
 > Explore features beyond the basics.
 
+### Learning Outcomes
+- [ ] Embed external content safely with iframes
+- [ ] Use data attributes to store custom data
+- [ ] Implement responsive images with picture and srcset
+- [ ] Understand when to use Canvas vs SVG
+
+### Topics
 - Iframes (`<iframe>`)
   - Embedding external content
   - `sandbox` attribute for security
@@ -252,12 +494,40 @@ A complete, structured learning path for HTML — from writing your first tag to
   - `<template>` element
   - `<slot>` element (Web Components)
 
+> [!WARNING]
+> Always use the `sandbox` attribute on iframes to restrict what embedded content can do. Without it, embedded pages can run scripts, submit forms, and more.
+
+<details>
+<summary><strong>Quick Reference: Canvas vs SVG</strong></summary>
+
+| Feature | Canvas | SVG |
+|---------|--------|-----|
+| Type | Raster (pixels) | Vector (math) |
+| Scaling | Gets blurry | Always sharp |
+| Performance | Better for many objects | Better for few objects |
+| Interaction | Manual (JavaScript) | Built-in (DOM events) |
+| Best for | Games, data visualizations | Icons, logos, charts |
+| Accessibility | Poor (just pixels) | Good (DOM elements) |
+
+</details>
+
 ---
 
 ## Phase 9: Accessibility
 
+![Phase](https://img.shields.io/badge/Phase-9%2F10-blue)
+![Difficulty: Advanced](https://img.shields.io/badge/Difficulty-Advanced-red)
+![Time: 5-6 Hours](https://img.shields.io/badge/Time-5--6%20Hours-yellow)
+
 > Make your web pages usable by everyone.
 
+### Learning Outcomes
+- [ ] Apply WCAG principles to any web page
+- [ ] Write effective alt text for images
+- [ ] Use ARIA attributes correctly (and know when NOT to)
+- [ ] Test your pages with a screen reader
+
+### Topics
 - Why accessibility matters
   - Legal requirements
   - Wider audience reach
@@ -291,12 +561,39 @@ A complete, structured learning path for HTML — from writing your first tag to
 - Color contrast considerations
 - Screen reader testing basics
 
+> [!IMPORTANT]
+> The #1 rule of ARIA: **Don't use ARIA if you can use a native HTML element instead.** A `<button>` is always better than `<div role="button">`.
+
+<details>
+<summary><strong>Quick Reference: Writing Good Alt Text</strong></summary>
+
+| Image Type | Alt Text Approach | Example |
+|-----------|-------------------|---------|
+| Informative | Describe the content | `alt="Golden retriever playing fetch in a park"` |
+| Functional (link/button) | Describe the action | `alt="Search"` or `alt="Go to homepage"` |
+| Decorative | Leave empty | `alt=""` |
+| Complex (charts/graphs) | Summarize + provide long description | `alt="Sales chart showing 30% growth in Q4"` |
+| Text in image | Repeat the text | `alt="Sale: 50% off all items"` |
+
+</details>
+
 ---
 
 ## Phase 10: Best Practices & SEO
 
+![Phase](https://img.shields.io/badge/Phase-10%2F10-blue)
+![Difficulty: Advanced](https://img.shields.io/badge/Difficulty-Advanced-red)
+![Time: 4-5 Hours](https://img.shields.io/badge/Time-4--5%20Hours-yellow)
+
 > Write clean, performant, search-engine-friendly HTML.
 
+### Learning Outcomes
+- [ ] Validate your HTML using W3C Validator
+- [ ] Structure HTML for optimal SEO
+- [ ] Optimize page load with lazy loading and preloading
+- [ ] Test cross-browser compatibility
+
+### Topics
 - Code quality
   - Consistent indentation and formatting
   - Meaningful class and ID names
@@ -319,19 +616,142 @@ A complete, structured learning path for HTML — from writing your first tag to
   - Can I Use (caniuse.com)
   - Progressive enhancement approach
 
+> [!TIP]
+> Run your pages through the [W3C Validator](https://validator.w3.org/) regularly. It catches errors you won't see visually but that hurt SEO and accessibility.
+
+---
+
+## Common Mistakes
+
+Avoid these pitfalls that trip up most beginners:
+
+| # | Mistake | Why It's Wrong | Do This Instead |
+|---|---------|----------------|-----------------|
+| 1 | Skipping `alt` on images | Breaks accessibility; screen readers can't describe the image | Always add descriptive `alt` text |
+| 2 | Using `<br>` for spacing | That's what CSS margin/padding is for | Use CSS for spacing between elements |
+| 3 | Multiple `<h1>` tags | Confuses search engines about the page topic | One `<h1>` per page, use `<h2>`-`<h6>` for subsections |
+| 4 | Using `<div>` for everything | Loses semantic meaning; hurts SEO and accessibility | Use `<nav>`, `<main>`, `<section>`, `<article>`, etc. |
+| 5 | Forgetting `<!DOCTYPE html>` | Browser enters "quirks mode" and renders things differently | Always start with `<!DOCTYPE html>` |
+| 6 | Inline styles everywhere | Makes code unmaintainable and hard to update | Use external CSS files |
+| 7 | Not closing tags | Causes unpredictable rendering and nesting issues | Close every tag (or use self-closing syntax) |
+| 8 | Using `<table>` for layout | Tables are for data; layout should use CSS | Use CSS Flexbox or Grid for layout |
+| 9 | Skipping `<label>` on forms | Inputs become unusable for screen readers and harder to click | Wrap or link every input with a `<label>` |
+| 10 | Ignoring mobile viewport | Page won't scale properly on phones | Add `<meta name="viewport" content="width=device-width, initial-scale=1.0">` |
+
+---
+
+## Interview Questions
+
+Test your HTML knowledge with these commonly asked questions:
+
+<details>
+<summary><strong>Beginner Level</strong></summary>
+
+1. **What does HTML stand for?**
+   - HyperText Markup Language
+
+2. **What is the difference between an element and a tag?**
+   - A tag is the markup syntax (`<p>`, `</p>`). An element is the tag plus its content (`<p>Hello</p>`).
+
+3. **What is the purpose of the `alt` attribute in images?**
+   - Provides alternative text for screen readers and displays when the image fails to load.
+
+4. **What's the difference between `<div>` and `<span>`?**
+   - `<div>` is block-level (takes full width). `<span>` is inline (takes only needed width).
+
+5. **What are empty/void elements? Name a few.**
+   - Elements that don't have closing tags: `<br>`, `<hr>`, `<img>`, `<input>`, `<meta>`, `<link>`.
+
+</details>
+
+<details>
+<summary><strong>Intermediate Level</strong></summary>
+
+1. **What is semantic HTML? Why does it matter?**
+   - Using HTML elements that clearly describe their meaning (like `<nav>`, `<article>`, `<footer>`) instead of generic `<div>`. It improves accessibility, SEO, and code readability.
+
+2. **What is the difference between `<strong>` and `<b>`?**
+   - `<strong>` indicates importance (semantic). `<b>` is just visual boldness (presentational). Screen readers emphasize `<strong>`.
+
+3. **Explain the difference between `GET` and `POST` form methods.**
+   - `GET` appends data to the URL (visible, bookmarkable, limited size). `POST` sends data in the request body (hidden, no size limit, for sensitive data).
+
+4. **What is the `data-*` attribute used for?**
+   - Storing custom data on HTML elements that can be accessed via JavaScript using `element.dataset`.
+
+5. **What's the difference between `defer` and `async` on script tags?**
+   - Both download in parallel with HTML parsing. `defer` executes after parsing is complete (in order). `async` executes immediately when downloaded (no guaranteed order).
+
+</details>
+
+<details>
+<summary><strong>Advanced Level</strong></summary>
+
+1. **What are ARIA roles and when should you use them?**
+   - ARIA roles define what an element is or does for assistive technologies. Use them only when native HTML elements can't provide the needed semantics (e.g., custom widgets).
+
+2. **How do `srcset` and `sizes` work for responsive images?**
+   - `srcset` provides multiple image sources with their widths. `sizes` tells the browser how wide the image will display at different viewport sizes. The browser picks the best image automatically.
+
+3. **What is the Shadow DOM and how does it relate to `<template>`?**
+   - Shadow DOM encapsulates HTML, CSS, and JS inside a component. `<template>` holds markup that isn't rendered until cloned via JavaScript, often used with Shadow DOM for Web Components.
+
+4. **How would you optimize an HTML page for Core Web Vitals?**
+   - Specify `width`/`height` on images (reduces CLS), use `loading="lazy"` on below-fold images, preload critical resources, minimize render-blocking scripts with `defer`, use semantic HTML for faster parsing.
+
+5. **Explain the difference between `localStorage`, `sessionStorage`, and cookies.**
+   - `localStorage`: persists until cleared, ~5MB, client-side only. `sessionStorage`: cleared when tab closes, ~5MB, client-side only. Cookies: sent with every HTTP request, ~4KB, can be server-side, have expiry.
+
+</details>
+
 ---
 
 ## Practice Projects
 
 Build these projects as you progress through the syllabus:
 
-| # | Project | Phase | Description |
-|---|---------|-------|-------------|
-| 1 | Personal Bio Page | Phase 1-2 | A simple page about yourself with headings, paragraphs, and text formatting |
-| 2 | Recipe Page | Phase 3-4 | A recipe page with images, lists of ingredients, and step-by-step instructions |
-| 3 | Survey Form | Phase 5 | A form collecting user information with various input types and validation |
-| 4 | Tribute Page | Phase 6 | A tribute to someone you admire using semantic HTML elements |
-| 5 | Technical Documentation | Phase 7-10 | A multi-section documentation page with navigation, code examples, and proper accessibility |
+### Project 1: Personal Bio Page
+![Phase 1-2](https://img.shields.io/badge/After-Phase%201--2-green)
+
+**What you'll build:** A simple "About Me" page with your name, photo, bio, and a list of hobbies.
+
+**Skills practiced:** Headings, paragraphs, text formatting, images, lists.
+
+---
+
+### Project 2: Recipe Page
+![Phase 3-4](https://img.shields.io/badge/After-Phase%203--4-green)
+
+**What you'll build:** A complete recipe page with a hero image, ingredient list, step-by-step instructions, and a nutrition info table.
+
+**Skills practiced:** Images, ordered/unordered lists, tables, links to sources.
+
+---
+
+### Project 3: Survey Form
+![Phase 5](https://img.shields.io/badge/After-Phase%205-yellow)
+
+**What you'll build:** A registration/survey form with text fields, dropdowns, radio buttons, checkboxes, and validation.
+
+**Skills practiced:** All form elements, input types, validation attributes, fieldset grouping.
+
+---
+
+### Project 4: Blog Article Page
+![Phase 6-7](https://img.shields.io/badge/After-Phase%206--7-yellow)
+
+**What you'll build:** A fully semantic blog post with header, navigation, main content with sections, sidebar, and footer. Includes proper meta tags and Open Graph data.
+
+**Skills practiced:** Semantic elements, meta tags, Open Graph, proper heading hierarchy.
+
+---
+
+### Project 5: Accessible Portfolio
+![Phase 8-10](https://img.shields.io/badge/After-Phase%208--10-red)
+
+**What you'll build:** A multi-page portfolio site with responsive images, embedded content, proper ARIA attributes, and SEO optimization. Should pass W3C validation and score 90+ on Lighthouse accessibility.
+
+**Skills practiced:** Everything from all phases — your HTML graduation project.
 
 ---
 
