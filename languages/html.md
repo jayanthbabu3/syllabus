@@ -48,23 +48,14 @@ A complete, structured learning path for HTML — from writing your first tag to
 
 > Understand what HTML is and write your first web page.
 
-### Learning Outcomes
-- [ ] Explain what HTML is and its role in web development
-- [ ] Set up a code editor and browser dev tools
-- [ ] Write and view a complete HTML page from scratch
-
-### Topics
-- What is HTML and why it matters
-- Brief history of HTML (HTML4 → XHTML → HTML5)
-- How the web works (browser, server, request/response)
-- Setting up your environment
-  - Code editor (VS Code recommended)
-  - Browser developer tools (Chrome DevTools)
-- HTML document structure
-  - `<!DOCTYPE html>` declaration
-  - `<html>`, `<head>`, `<body>` tags
-  - The boilerplate template
-- Writing and viewing your first HTML page
+| # | Topic | What You'll Learn |
+|:-:|-------|-------------------|
+| 1 | What is HTML | What HTML stands for, why every website needs it, and how it fits with CSS & JavaScript |
+| 2 | History of HTML | The evolution from HTML4 → XHTML → HTML5 and why HTML5 is the modern standard |
+| 3 | How the Web Works | The browser-server model — what happens when you type a URL and hit Enter |
+| 4 | Setting Up Your Editor | Install VS Code, enable Emmet shortcuts, open Chrome DevTools (F12) |
+| 5 | HTML Document Structure | `<!DOCTYPE html>`, `<html>`, `<head>`, `<body>` — the skeleton of every page |
+| 6 | Your First HTML Page | Create, save, and open an `.html` file in the browser — see your code come alive |
 
 > [!TIP]
 > In VS Code, type `!` and press Tab to instantly generate the full HTML boilerplate. This shortcut alone will save you hours.
@@ -89,6 +80,15 @@ A complete, structured learning path for HTML — from writing your first tag to
 
 </details>
 
+<details>
+<summary><strong>Learning Checklist</strong></summary>
+
+- [ ] Explain what HTML is and its role in web development
+- [ ] Set up a code editor and browser dev tools
+- [ ] Write and view a complete HTML page from scratch
+
+</details>
+
 ---
 
 ## Phase 2: HTML Basics
@@ -99,31 +99,15 @@ A complete, structured learning path for HTML — from writing your first tag to
 
 > Learn the fundamental building blocks of every web page.
 
-### Learning Outcomes
-- [ ] Identify HTML elements, tags, and attributes
-- [ ] Use headings, paragraphs, and text formatting correctly
-- [ ] Understand the difference between block and inline elements
-
-### Topics
-- HTML elements, tags, and attributes
-  - Opening tags, closing tags, self-closing tags
-  - Attribute syntax (`name="value"`)
-- Headings (`<h1>` through `<h6>`)
-  - Heading hierarchy and when to use each
-- Paragraphs (`<p>`)
-- Line breaks (`<br>`) and horizontal rules (`<hr>`)
-- Text formatting tags
-  - Bold: `<strong>` vs `<b>`
-  - Italic: `<em>` vs `<i>`
-  - Underline: `<u>`
-  - Strikethrough: `<s>`, `<del>`
-  - Subscript: `<sub>`, Superscript: `<sup>`
-  - Code: `<code>`, Preformatted: `<pre>`
-- HTML comments (`<!-- -->`)
-- Block-level vs inline elements
-  - `<div>` (block container)
-  - `<span>` (inline container)
-- Nesting elements properly
+| # | Topic | What You'll Learn |
+|:-:|-------|-------------------|
+| 1 | Elements, Tags & Attributes | Opening tags, closing tags, self-closing tags, and attribute syntax (`name="value"`) |
+| 2 | Headings | `<h1>` through `<h6>` — heading hierarchy and when to use each level |
+| 3 | Paragraphs & Spacing | `<p>` for paragraphs, `<br>` for line breaks, `<hr>` for horizontal rules |
+| 4 | Text Formatting | `<strong>` vs `<b>`, `<em>` vs `<i>`, `<u>`, `<del>`, `<sub>`, `<sup>`, `<code>`, `<pre>` |
+| 5 | Comments | `<!-- -->` — hide notes in your code that don't show on the page |
+| 6 | Block vs Inline Elements | Block elements (`<div>`) take full width, inline elements (`<span>`) flow with text |
+| 7 | Nesting Elements | How to properly nest tags inside each other without breaking the structure |
 
 > [!IMPORTANT]
 > `<strong>` means **semantically important** (screen readers emphasize it). `<b>` is just **visual bold**. Always prefer `<strong>` when the text is truly important.
@@ -145,6 +129,15 @@ A complete, structured learning path for HTML — from writing your first tag to
 
 </details>
 
+<details>
+<summary><strong>Learning Checklist</strong></summary>
+
+- [ ] Identify HTML elements, tags, and attributes
+- [ ] Use headings, paragraphs, and text formatting correctly
+- [ ] Understand the difference between block and inline elements
+
+</details>
+
 ---
 
 ## Phase 3: Links, Images & Media
@@ -155,33 +148,14 @@ A complete, structured learning path for HTML — from writing your first tag to
 
 > Connect pages together and add visual content.
 
-### Learning Outcomes
-- [ ] Create hyperlinks to external sites, internal pages, and page sections
-- [ ] Add images with proper alt text
-- [ ] Embed audio and video content
-- [ ] Understand relative vs absolute file paths
-
-### Topics
-- Hyperlinks with `<a>`
-  - `href` attribute (URLs, relative paths)
-  - `target="_blank"` to open in new tab
-  - `rel="noopener noreferrer"` for security
-  - Linking to page sections with `id` anchors
-  - Email links (`mailto:`) and phone links (`tel:`)
-- Images with `<img>`
-  - `src` and `alt` attributes
-  - Width and height attributes
-  - Image formats (JPEG, PNG, GIF, WebP, SVG)
-- Audio with `<audio>`
-  - `src`, `controls`, `autoplay`, `loop`
-  - Multiple sources with `<source>`
-- Video with `<video>`
-  - `src`, `controls`, `poster`, `width`, `height`
-  - Multiple sources with `<source>`
-- File paths
-  - Absolute vs relative paths
-  - Parent directory (`../`)
-  - Root-relative paths (`/`)
+| # | Topic | What You'll Learn |
+|:-:|-------|-------------------|
+| 1 | Hyperlinks (`<a>`) | Link to other pages with `href`, open in new tabs with `target="_blank"`, anchor to page sections with `#id` |
+| 2 | Email & Phone Links | Create clickable email (`mailto:`) and phone number (`tel:`) links |
+| 3 | Images (`<img>`) | Add images with `src` and `alt`, set dimensions, choose between JPEG/PNG/WebP/SVG |
+| 4 | Audio (`<audio>`) | Embed sound files with player controls, support multiple formats with `<source>` |
+| 5 | Video (`<video>`) | Embed videos with controls, poster image, and multiple format fallbacks |
+| 6 | File Paths | Absolute vs relative paths, navigating directories with `../`, root-relative paths |
 
 > [!WARNING]
 > Always add `rel="noopener noreferrer"` when using `target="_blank"`. Without it, the opened page can access your page via `window.opener` — a security risk.
@@ -201,6 +175,16 @@ A complete, structured learning path for HTML — from writing your first tag to
 
 </details>
 
+<details>
+<summary><strong>Learning Checklist</strong></summary>
+
+- [ ] Create hyperlinks to external sites, internal pages, and page sections
+- [ ] Add images with proper alt text
+- [ ] Embed audio and video content
+- [ ] Understand relative vs absolute file paths
+
+</details>
+
 ---
 
 ## Phase 4: Lists & Tables
@@ -211,28 +195,27 @@ A complete, structured learning path for HTML — from writing your first tag to
 
 > Organize and display structured data.
 
-### Learning Outcomes
+| # | Topic | What You'll Learn |
+|:-:|-------|-------------------|
+| 1 | Unordered Lists | Bullet-point lists with `<ul>` and `<li>` |
+| 2 | Ordered Lists | Numbered lists with `<ol>`, `<li>`, and custom numbering (`type`, `start`) |
+| 3 | Nested Lists | Lists inside lists — for menus, outlines, and hierarchical data |
+| 4 | Description Lists | Key-value pairs with `<dl>`, `<dt>`, `<dd>` — great for glossaries and FAQs |
+| 5 | Table Basics | Build tables with `<table>`, `<tr>`, `<td>`, and `<th>` for headers |
+| 6 | Table Structure | Organize with `<thead>`, `<tbody>`, `<tfoot>`, and add titles with `<caption>` |
+| 7 | Merging Cells | Span columns with `colspan` and rows with `rowspan` for complex layouts |
+
+> [!CAUTION]
+> Never use `<table>` for page layout. Tables are for **tabular data only** (like spreadsheets, schedules, comparisons). Use CSS Flexbox or Grid for layout.
+
+<details>
+<summary><strong>Learning Checklist</strong></summary>
+
 - [ ] Create ordered, unordered, and description lists
 - [ ] Build tables with headers, body, and footer sections
 - [ ] Merge table cells using colspan and rowspan
 
-### Topics
-- Unordered lists (`<ul>`, `<li>`)
-- Ordered lists (`<ol>`, `<li>`)
-  - `type` attribute (1, A, a, I, i)
-  - `start` attribute
-- Nested lists
-- Description lists (`<dl>`, `<dt>`, `<dd>`)
-- Tables
-  - Basic structure: `<table>`, `<tr>`, `<td>`
-  - Table headers: `<th>`
-  - Table sections: `<thead>`, `<tbody>`, `<tfoot>`
-  - Merging cells: `colspan`, `rowspan`
-  - `<caption>` for table titles
-  - When to use tables (tabular data) vs when not to (layout)
-
-> [!CAUTION]
-> Never use `<table>` for page layout. Tables are for **tabular data only** (like spreadsheets, schedules, comparisons). Use CSS Flexbox or Grid for layout.
+</details>
 
 ---
 
@@ -244,51 +227,18 @@ A complete, structured learning path for HTML — from writing your first tag to
 
 > Build interactive forms to collect user data.
 
-### Learning Outcomes
-- [ ] Build a complete form with various input types
-- [ ] Apply HTML5 validation (required, pattern, min/max)
-- [ ] Group related fields with fieldset and legend
-- [ ] Understand GET vs POST methods
-
-### Topics
-- The `<form>` element
-  - `action` attribute (where to send data)
-  - `method` attribute (`GET` vs `POST`)
-- The `<label>` element and `for` attribute
-- Text inputs
-  - `<input type="text">`
-  - `<input type="password">`
-  - `<input type="email">`
-  - `<input type="number">`
-  - `<input type="tel">`
-  - `<input type="url">`
-  - `<input type="search">`
-- Date and time inputs
-  - `<input type="date">`
-  - `<input type="time">`
-  - `<input type="datetime-local">`
-- Selection inputs
-  - `<input type="checkbox">`
-  - `<input type="radio">`
-  - `<select>` and `<option>` dropdowns
-  - `<datalist>` for autocomplete suggestions
-- Other inputs
-  - `<input type="file">` for file uploads
-  - `<input type="range">` for sliders
-  - `<input type="color">` for color picker
-  - `<input type="hidden">` for hidden data
-- `<textarea>` for multi-line text
-- Buttons
-  - `<button>` element
-  - `<input type="submit">`, `<input type="reset">`
-- Grouping with `<fieldset>` and `<legend>`
-- HTML5 form validation
-  - `required` attribute
-  - `minlength`, `maxlength`
-  - `min`, `max`, `step`
-  - `pattern` (regex validation)
-  - `placeholder` text
-- Common input attributes: `name`, `value`, `id`, `disabled`, `readonly`, `autofocus`
+| # | Topic | What You'll Learn |
+|:-:|-------|-------------------|
+| 1 | The `<form>` Element | `action` (where data goes), `method` (`GET` vs `POST`), and how forms submit data |
+| 2 | Labels | `<label>` with `for` attribute — connects text to inputs for accessibility and UX |
+| 3 | Text Inputs | `text`, `password`, `email`, `number`, `tel`, `url`, `search` — each has built-in validation |
+| 4 | Date & Time Inputs | `date`, `time`, `datetime-local` — native browser date/time pickers |
+| 5 | Selection Inputs | `checkbox` (multi-select), `radio` (single-select), `<select>` dropdowns, `<datalist>` autocomplete |
+| 6 | File, Range & Color | `file` (uploads), `range` (sliders), `color` (color picker), `hidden` (invisible data) |
+| 7 | Textarea & Buttons | `<textarea>` for multi-line text, `<button>` vs `<input type="submit">` |
+| 8 | Grouping Fields | `<fieldset>` and `<legend>` — visually and semantically group related inputs |
+| 9 | HTML5 Validation | `required`, `minlength`, `maxlength`, `min`, `max`, `pattern` (regex), `placeholder` |
+| 10 | Input Attributes | `name`, `value`, `id`, `disabled`, `readonly`, `autofocus` — control input behavior |
 
 > [!TIP]
 > Always use `<label>` with every input. Clicking the label focuses the input — better UX for everyone, especially mobile users.
@@ -317,6 +267,16 @@ A complete, structured learning path for HTML — from writing your first tag to
 
 </details>
 
+<details>
+<summary><strong>Learning Checklist</strong></summary>
+
+- [ ] Build a complete form with various input types
+- [ ] Apply HTML5 validation (required, pattern, min/max)
+- [ ] Group related fields with fieldset and legend
+- [ ] Understand GET vs POST methods
+
+</details>
+
 ---
 
 ## Phase 6: Semantic HTML
@@ -327,34 +287,18 @@ A complete, structured learning path for HTML — from writing your first tag to
 
 > Write meaningful HTML that browsers and screen readers understand.
 
-### Learning Outcomes
-- [ ] Replace generic `<div>` elements with proper semantic tags
-- [ ] Structure a page using header, nav, main, section, article, aside, footer
-- [ ] Explain why semantic HTML improves SEO and accessibility
-
-### Topics
-- What is semantic HTML and why it matters
-  - Improved accessibility
-  - Better SEO
-  - Easier to read and maintain
-- Page structure elements
-  - `<header>` — introductory content or navigation
-  - `<nav>` — navigation links
-  - `<main>` — main content (one per page)
-  - `<section>` — thematic grouping of content
-  - `<article>` — self-contained content
-  - `<aside>` — sidebar or tangentially related content
-  - `<footer>` — footer content
-- Content elements
-  - `<figure>` and `<figcaption>` — images with captions
-  - `<details>` and `<summary>` — expandable content
-  - `<time>` — dates and times
-  - `<mark>` — highlighted text
-  - `<progress>` — progress bars
-  - `<meter>` — scalar measurements
-  - `<address>` — contact information
-  - `<blockquote>` and `<cite>` — quotations
-- When to use `<div>` vs semantic elements
+| # | Topic | What You'll Learn |
+|:-:|-------|-------------------|
+| 1 | Why Semantics Matter | How semantic HTML improves accessibility, SEO, and code readability |
+| 2 | `<header>` & `<footer>` | Page/section introductions and footer content (contact, copyright) |
+| 3 | `<nav>` | Wrap your navigation links — tells browsers and screen readers "this is a menu" |
+| 4 | `<main>` | The primary content of the page (only one per page) |
+| 5 | `<section>` & `<article>` | `<section>` groups related content, `<article>` is self-contained (blog post, card) |
+| 6 | `<aside>` | Sidebar content, related links, or supplementary information |
+| 7 | `<figure>` & `<figcaption>` | Images, diagrams, or code with a descriptive caption |
+| 8 | `<details>` & `<summary>` | Native collapsible/expandable sections — no JavaScript needed |
+| 9 | Other Semantic Tags | `<time>`, `<mark>`, `<progress>`, `<meter>`, `<address>`, `<blockquote>`, `<cite>` |
+| 10 | `<div>` vs Semantic Tags | When `<div>` is okay and when you should use a semantic element instead |
 
 > [!IMPORTANT]
 > Think of `<div>` as a last resort. If there's a semantic element that describes your content (`<nav>`, `<article>`, `<aside>`, etc.), always use that instead.
@@ -386,6 +330,15 @@ A complete, structured learning path for HTML — from writing your first tag to
 
 </details>
 
+<details>
+<summary><strong>Learning Checklist</strong></summary>
+
+- [ ] Replace generic `<div>` elements with proper semantic tags
+- [ ] Structure a page using header, nav, main, section, article, aside, footer
+- [ ] Explain why semantic HTML improves SEO and accessibility
+
+</details>
+
 ---
 
 ## Phase 7: HTML Head & Meta Tags
@@ -396,34 +349,16 @@ A complete, structured learning path for HTML — from writing your first tag to
 
 > Control how your page appears in browsers, search engines, and social media.
 
-### Learning Outcomes
-- [ ] Configure essential meta tags for every page
-- [ ] Set up Open Graph tags for social media previews
-- [ ] Understand defer vs async for script loading
-
-### Topics
-- The `<head>` section
-- `<title>` — page title (shown in browser tab)
-- `<meta>` tags
-  - `charset="UTF-8"` — character encoding
-  - `viewport` — responsive design on mobile
-  - `description` — page description for search engines
-  - `keywords` — (less important for SEO today)
-  - `author`
-  - `robots` — search engine crawling instructions
-- Open Graph meta tags (for social media sharing)
-  - `og:title`, `og:description`, `og:image`, `og:url`
-  - Twitter Card meta tags
-- Favicon
-  - `<link rel="icon">` — browser tab icon
-- Linking external resources
-  - `<link rel="stylesheet">` — CSS files
-  - `<link rel="preload">` — preload critical resources
-  - `<link rel="canonical">` — canonical URL
-- `<script>` tag
-  - Inline vs external scripts
-  - `defer` vs `async` attributes
-  - Where to place script tags
+| # | Topic | What You'll Learn |
+|:-:|-------|-------------------|
+| 1 | The `<head>` Section | What goes inside `<head>` — none of it is visible on the page, but all of it matters |
+| 2 | `<title>` Tag | Sets the browser tab text and the title shown in Google search results |
+| 3 | Essential Meta Tags | `charset` (encoding), `viewport` (mobile), `description` (SEO), `author`, `robots` |
+| 4 | Open Graph Tags | `og:title`, `og:description`, `og:image` — control how your page looks when shared on social media |
+| 5 | Twitter Card Tags | Similar to Open Graph but specifically for Twitter/X previews |
+| 6 | Favicon | `<link rel="icon">` — the small icon in the browser tab |
+| 7 | External Resources | `<link rel="stylesheet">` for CSS, `<link rel="preload">` for performance, `<link rel="canonical">` for SEO |
+| 8 | Script Loading | `<script>` placement, `defer` vs `async` — controls when JavaScript runs relative to page loading |
 
 > [!TIP]
 > Always include these 3 meta tags in every page — they're non-negotiable:
@@ -446,6 +381,15 @@ A complete, structured learning path for HTML — from writing your first tag to
 
 </details>
 
+<details>
+<summary><strong>Learning Checklist</strong></summary>
+
+- [ ] Configure essential meta tags for every page
+- [ ] Set up Open Graph tags for social media previews
+- [ ] Understand defer vs async for script loading
+
+</details>
+
 ---
 
 ## Phase 8: Advanced HTML
@@ -456,43 +400,17 @@ A complete, structured learning path for HTML — from writing your first tag to
 
 > Explore features beyond the basics.
 
-### Learning Outcomes
-- [ ] Embed external content safely with iframes
-- [ ] Use data attributes to store custom data
-- [ ] Implement responsive images with picture and srcset
-- [ ] Understand when to use Canvas vs SVG
-
-### Topics
-- Iframes (`<iframe>`)
-  - Embedding external content
-  - `sandbox` attribute for security
-  - `loading="lazy"` for performance
-- HTML entities and symbols
-  - `&amp;`, `&lt;`, `&gt;`, `&nbsp;`, `&copy;`
-  - Numeric character references
-- Data attributes (`data-*`)
-  - Custom data storage in HTML elements
-  - Accessing with JavaScript (`dataset`)
-- Responsive images
-  - `<picture>` element with `<source>`
-  - `srcset` and `sizes` attributes
-  - Art direction vs resolution switching
-- Canvas (`<canvas>`)
-  - What it's used for (graphics, games, visualizations)
-  - Basic setup (JavaScript required for drawing)
-- SVG (`<svg>`)
-  - Inline SVG vs `<img>` tag
-  - Basic shapes (circle, rect, path)
-  - When to use SVG vs raster images
-- Drag and Drop API (overview)
-  - `draggable` attribute
-  - Drag events
-- Web Storage overview
-  - `localStorage` vs `sessionStorage`
-  - How HTML relates to client-side storage
-- HTML Templates
-  - `<template>` element
-  - `<slot>` element (Web Components)
+| # | Topic | What You'll Learn |
+|:-:|-------|-------------------|
+| 1 | Iframes (`<iframe>`) | Embed external content (maps, videos), use `sandbox` for security, `loading="lazy"` for speed |
+| 2 | HTML Entities & Symbols | Special characters like `&amp;`, `&lt;`, `&gt;`, `&nbsp;`, `&copy;` and numeric references |
+| 3 | Data Attributes (`data-*`) | Store custom data on any element, access it in JavaScript with `element.dataset` |
+| 4 | Responsive Images | `<picture>` with `<source>`, `srcset` and `sizes` — serve the right image for every screen |
+| 5 | Canvas (`<canvas>`) | Draw graphics, build games, create visualizations (requires JavaScript) |
+| 6 | SVG (`<svg>`) | Inline vs `<img>`, basic shapes (circle, rect, path) — always sharp at any size |
+| 7 | Drag and Drop API | `draggable` attribute and drag events — make elements movable |
+| 8 | Web Storage | `localStorage` (persists) vs `sessionStorage` (tab only) — how HTML connects to client-side storage |
+| 9 | HTML Templates | `<template>` and `<slot>` — reusable markup for Web Components |
 
 > [!WARNING]
 > Always use the `sandbox` attribute on iframes to restrict what embedded content can do. Without it, embedded pages can run scripts, submit forms, and more.
@@ -511,6 +429,16 @@ A complete, structured learning path for HTML — from writing your first tag to
 
 </details>
 
+<details>
+<summary><strong>Learning Checklist</strong></summary>
+
+- [ ] Embed external content safely with iframes
+- [ ] Use data attributes to store custom data
+- [ ] Implement responsive images with picture and srcset
+- [ ] Understand when to use Canvas vs SVG
+
+</details>
+
 ---
 
 ## Phase 9: Accessibility
@@ -521,45 +449,18 @@ A complete, structured learning path for HTML — from writing your first tag to
 
 > Make your web pages usable by everyone.
 
-### Learning Outcomes
-- [ ] Apply WCAG principles to any web page
-- [ ] Write effective alt text for images
-- [ ] Use ARIA attributes correctly (and know when NOT to)
-- [ ] Test your pages with a screen reader
-
-### Topics
-- Why accessibility matters
-  - Legal requirements
-  - Wider audience reach
-  - Better user experience for all
-- WCAG principles
-  - **Perceivable** — content can be perceived by all senses
-  - **Operable** — interface can be operated by all users
-  - **Understandable** — content is understandable
-  - **Robust** — works across assistive technologies
-- Semantic HTML for accessibility (recap)
-- Image accessibility
-  - Meaningful `alt` text
-  - Decorative images (`alt=""`)
-  - Complex images (long descriptions)
-- ARIA (Accessible Rich Internet Applications)
-  - `role` attribute
-  - `aria-label` and `aria-labelledby`
-  - `aria-describedby`
-  - `aria-hidden`
-  - `aria-live` for dynamic content
-  - When NOT to use ARIA (prefer native HTML)
-- Keyboard navigation
-  - `tabindex` attribute
-  - Focus management
-  - Skip navigation links
-- Form accessibility
-  - Labels for every input
-  - Error messages and instructions
-  - Fieldset and legend for grouping
-- Language attribute (`lang`)
-- Color contrast considerations
-- Screen reader testing basics
+| # | Topic | What You'll Learn |
+|:-:|-------|-------------------|
+| 1 | Why Accessibility Matters | Legal requirements, wider audience reach, and better UX for everyone |
+| 2 | WCAG Principles | **Perceivable**, **Operable**, **Understandable**, **Robust** — the 4 pillars of web accessibility |
+| 3 | Semantic HTML (Recap) | How using the right elements (`<nav>`, `<main>`, `<button>`) makes pages accessible by default |
+| 4 | Image Accessibility | Meaningful `alt` text, decorative images (`alt=""`), long descriptions for complex images |
+| 5 | ARIA Basics | `role`, `aria-label`, `aria-labelledby`, `aria-describedby`, `aria-hidden`, `aria-live` |
+| 6 | When NOT to Use ARIA | Native HTML is always better — `<button>` beats `<div role="button">` every time |
+| 7 | Keyboard Navigation | `tabindex`, focus management, skip-to-content links — your site must work without a mouse |
+| 8 | Form Accessibility | Labels for every input, clear error messages, fieldset/legend for grouping |
+| 9 | Language & Contrast | `lang` attribute for screen readers, color contrast ratios for readability |
+| 10 | Screen Reader Testing | How to test with VoiceOver (Mac), NVDA (Windows), or ChromeVox (browser) |
 
 > [!IMPORTANT]
 > The #1 rule of ARIA: **Don't use ARIA if you can use a native HTML element instead.** A `<button>` is always better than `<div role="button">`.
@@ -577,6 +478,16 @@ A complete, structured learning path for HTML — from writing your first tag to
 
 </details>
 
+<details>
+<summary><strong>Learning Checklist</strong></summary>
+
+- [ ] Apply WCAG principles to any web page
+- [ ] Write effective alt text for images
+- [ ] Use ARIA attributes correctly (and know when NOT to)
+- [ ] Test your pages with a screen reader
+
+</details>
+
 ---
 
 ## Phase 10: Best Practices & SEO
@@ -587,37 +498,31 @@ A complete, structured learning path for HTML — from writing your first tag to
 
 > Write clean, performant, search-engine-friendly HTML.
 
-### Learning Outcomes
+| # | Topic | What You'll Learn |
+|:-:|-------|-------------------|
+| 1 | Code Quality | Consistent indentation, meaningful class/ID names, proper tag nesting |
+| 2 | Heading Hierarchy | Use one `<h1>` per page, follow a logical `<h2>` → `<h3>` → `<h4>` structure |
+| 3 | SEO Meta Tags | Descriptive `<title>` and `<meta description>` that make Google want to show your page |
+| 4 | Structured Data | Schema.org basics — help search engines understand your content (recipes, reviews, events) |
+| 5 | Sitemap & robots.txt | Tell search engines what to crawl and what to skip |
+| 6 | Lazy Loading | `loading="lazy"` on images and iframes — only load what the user can see |
+| 7 | Preloading | `<link rel="preload">` — load critical fonts, images, and scripts early |
+| 8 | DOM Performance | Minimize nesting depth, remove unnecessary wrapper `<div>`s |
+| 9 | HTML Validation | Use the [W3C Validator](https://validator.w3.org/) to catch errors browsers silently ignore |
+| 10 | Cross-Browser Testing | Test in Chrome, Firefox, Safari. Use [Can I Use](https://caniuse.com/) before using new features |
+
+> [!TIP]
+> Run your pages through the [W3C Validator](https://validator.w3.org/) regularly. It catches errors you won't see visually but that hurt SEO and accessibility.
+
+<details>
+<summary><strong>Learning Checklist</strong></summary>
+
 - [ ] Validate your HTML using W3C Validator
 - [ ] Structure HTML for optimal SEO
 - [ ] Optimize page load with lazy loading and preloading
 - [ ] Test cross-browser compatibility
 
-### Topics
-- Code quality
-  - Consistent indentation and formatting
-  - Meaningful class and ID names
-  - Proper nesting and closing of tags
-- SEO fundamentals
-  - Heading hierarchy (`<h1>` once per page)
-  - Descriptive `<title>` and `<meta description>`
-  - Structured data basics (Schema.org)
-  - Sitemap and robots.txt (overview)
-- Performance
-  - Lazy loading images (`loading="lazy"`)
-  - Preloading critical resources
-  - Minimizing DOM depth
-  - Reducing unnecessary wrappers
-- HTML validation
-  - W3C Markup Validator
-  - Browser developer tools
-- Cross-browser compatibility
-  - Testing across browsers
-  - Can I Use (caniuse.com)
-  - Progressive enhancement approach
-
-> [!TIP]
-> Run your pages through the [W3C Validator](https://validator.w3.org/) regularly. It catches errors you won't see visually but that hurt SEO and accessibility.
+</details>
 
 ---
 
