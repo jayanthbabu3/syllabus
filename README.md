@@ -14,7 +14,7 @@ Whether you're just starting out or picking up a new language, having a clear le
 | # | Language / Technology | Syllabus | Status |
 |---|----------------------|----------|--------|
 | 1 | HTML | [View Syllabus](languages/html.md) | Available |
-| 2 | CSS | [View Syllabus](languages/css.md) | Coming Soon |
+| 2 | CSS | [View Syllabus](languages/css.md) | Available |
 | 3 | JavaScript | [View Syllabus](languages/javascript.md) | Coming Soon |
 | 4 | TypeScript | [View Syllabus](languages/typescript.md) | Coming Soon |
 | 5 | React | [View Syllabus](languages/react.md) | Coming Soon |
