@@ -18,7 +18,7 @@ Whether you're just starting out or picking up a new language, having a clear le
 | 3 | JavaScript | [View Syllabus](languages/javascript.md) | Available |
 | 4 | TypeScript | [View Syllabus](languages/typescript.md) | Available |
 | 5 | React | [View Syllabus](languages/react.md) | Available |
-| 6 | Angular | [View Syllabus](languages/angular.md) | Coming Soon |
+| 6 | Angular | [View Syllabus](languages/angular.md) | Available |
 | 7 | Vue.js | [View Syllabus](languages/vuejs.md) | Coming Soon |
 | 8 | Node.js | [View Syllabus](languages/nodejs.md) | Coming Soon |
 | 9 | Python | [View Syllabus](languages/python.md) | Coming Soon |
