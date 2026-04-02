@@ -1,0 +1,58 @@
+# Dev Syllabus
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Languages](https://img.shields.io/badge/Languages-22-orange.svg)](#supported-languages)
+
+**A structured, beginner-friendly syllabus for 22 programming languages and technologies.**
+
+Whether you're just starting out or picking up a new language, having a clear learning path makes all the difference. This repo provides a proper-order syllabus for each language — from the absolute basics to advanced topics — along with the best free resources to learn from.
+
+---
+
+## Supported Languages
+
+| # | Language / Technology | Syllabus | Status |
+|---|----------------------|----------|--------|
+| 1 | HTML | [View Syllabus](languages/html.md) | Available |
+| 2 | CSS | [View Syllabus](languages/css.md) | Coming Soon |
+| 3 | JavaScript | [View Syllabus](languages/javascript.md) | Coming Soon |
+| 4 | TypeScript | [View Syllabus](languages/typescript.md) | Coming Soon |
+| 5 | React | [View Syllabus](languages/react.md) | Coming Soon |
+| 6 | Angular | [View Syllabus](languages/angular.md) | Coming Soon |
+| 7 | Vue.js | [View Syllabus](languages/vuejs.md) | Coming Soon |
+| 8 | Node.js | [View Syllabus](languages/nodejs.md) | Coming Soon |
+| 9 | Python | [View Syllabus](languages/python.md) | Coming Soon |
+| 10 | Java | [View Syllabus](languages/java.md) | Coming Soon |
+| 11 | C | [View Syllabus](languages/c.md) | Coming Soon |
+| 12 | C++ | [View Syllabus](languages/cpp.md) | Coming Soon |
+| 13 | C# | [View Syllabus](languages/csharp.md) | Coming Soon |
+| 14 | Go | [View Syllabus](languages/go.md) | Coming Soon |
+| 15 | Rust | [View Syllabus](languages/rust.md) | Coming Soon |
+| 16 | Ruby | [View Syllabus](languages/ruby.md) | Coming Soon |
+| 17 | PHP | [View Syllabus](languages/php.md) | Coming Soon |
+| 18 | Swift | [View Syllabus](languages/swift.md) | Coming Soon |
+| 19 | Kotlin | [View Syllabus](languages/kotlin.md) | Coming Soon |
+| 20 | SQL | [View Syllabus](languages/sql.md) | Coming Soon |
+| 21 | Docker | [View Syllabus](languages/docker.md) | Coming Soon |
+| 22 | Git | [View Syllabus](languages/git.md) | Coming Soon |
+
+---
+
+## How to Use This Repo
+
+1. **Pick a language** from the table above
+2. **Follow the syllabus** in order — each topic builds on the previous one
+3. **Use the resources** linked at the bottom of each syllabus
+4. **Build the practice projects** to reinforce what you learn
+
+---
+
+## Contributing
+
+Want to improve a syllabus or add a new language? Check out the [Contributing Guide](CONTRIBUTING.md).
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
