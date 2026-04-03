@@ -21,11 +21,11 @@ Whether you're just starting out or picking up a new language, having a clear le
 | 6 | Angular | [View Syllabus](languages/angular.md) | Available |
 | 7 | Vue.js | [View Syllabus](languages/vuejs.md) | Available |
 | 8 | Node.js | [View Syllabus](languages/nodejs.md) | Available |
-| 9 | Python | [View Syllabus](languages/python.md) | Coming Soon |
-| 10 | Java | [View Syllabus](languages/java.md) | Coming Soon |
-| 11 | C | [View Syllabus](languages/c.md) | Coming Soon |
-| 12 | C++ | [View Syllabus](languages/cpp.md) | Coming Soon |
-| 13 | C# | [View Syllabus](languages/csharp.md) | Coming Soon |
+| 9 | Python | [View Syllabus](languages/python.md) | Available |
+| 10 | Java | [View Syllabus](languages/java.md) | Available |
+| 11 | C | [View Syllabus](languages/c.md) | Available |
+| 12 | C++ | [View Syllabus](languages/cpp.md) | Available |
+| 13 | C# | [View Syllabus](languages/csharp.md) | Available |
 | 14 | Go | [View Syllabus](languages/go.md) | Coming Soon |
 | 15 | Rust | [View Syllabus](languages/rust.md) | Coming Soon |
 | 16 | Ruby | [View Syllabus](languages/ruby.md) | Coming Soon |
