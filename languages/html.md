@@ -22,7 +22,7 @@ A complete, structured learning path for HTML — from writing your first tag to
 - [Phase 9: Accessibility](#phase-9-accessibility)
 - [Phase 10: Best Practices & SEO](#phase-10-best-practices--seo)
 - [Common Mistakes](#common-mistakes)
-- [Interview Questions](#interview-questions)
+- [Interview Questions](../interviews/html.md)
 - [Practice Projects](#practice-projects)
 - [Resources](#resources)
 
@@ -101,7 +101,7 @@ A complete, structured learning path for HTML — from writing your first tag to
 
 | # | Topic | What You'll Learn |
 |:-:|-------|-------------------|
-| 1 | Elements, Tags & Attributes | Opening tags, closing tags, self-closing tags, and attribute syntax (`name="value"`) |
+| 1 | Elements, Tags & Attributes | Opening tags, closing tags, void elements, and attribute syntax (`name="value"`) |
 | 2 | Headings | `<h1>` through `<h6>` — heading hierarchy and when to use each level |
 | 3 | Paragraphs & Spacing | `<p>` for paragraphs, `<br>` for line breaks, `<hr>` for horizontal rules |
 | 4 | Text Formatting | `<strong>` vs `<b>`, `<em>` vs `<i>`, `<u>`, `<del>`, `<sub>`, `<sup>`, `<code>`, `<pre>` |
@@ -154,7 +154,7 @@ A complete, structured learning path for HTML — from writing your first tag to
 | 2 | Email & Phone Links | Create clickable email (`mailto:`) and phone number (`tel:`) links |
 | 3 | Images (`<img>`) | Add images with `src` and `alt`, set dimensions, choose between JPEG/PNG/WebP/SVG |
 | 4 | Audio (`<audio>`) | Embed sound files with player controls, support multiple formats with `<source>` |
-| 5 | Video (`<video>`) | Embed videos with controls, poster image, and multiple format fallbacks |
+| 5 | Video (`<video>`) | Embed videos with controls, poster image, multiple format fallbacks, and captions/subtitles with `<track>` |
 | 6 | File Paths | Absolute vs relative paths, navigating directories with `../`, root-relative paths |
 
 > [!WARNING]
@@ -238,7 +238,7 @@ A complete, structured learning path for HTML — from writing your first tag to
 | 7 | Textarea & Buttons | `<textarea>` for multi-line text, `<button>` vs `<input type="submit">` |
 | 8 | Grouping Fields | `<fieldset>` and `<legend>` — visually and semantically group related inputs |
 | 9 | HTML5 Validation | `required`, `minlength`, `maxlength`, `min`, `max`, `pattern` (regex), `placeholder` |
-| 10 | Input Attributes | `name`, `value`, `id`, `disabled`, `readonly`, `autofocus` — control input behavior |
+| 10 | Input Attributes | `name`, `value`, `id`, `disabled`, `readonly`, `autofocus`, `autocomplete`, `inputmode`, `accept` — control behavior, mobile keyboards, and uploads |
 
 > [!TIP]
 > Always use `<label>` with every input. Clicking the label focuses the input — better UX for everyone, especially mobile users.
@@ -408,9 +408,10 @@ A complete, structured learning path for HTML — from writing your first tag to
 | 4 | Responsive Images | `<picture>` with `<source>`, `srcset` and `sizes` — serve the right image for every screen |
 | 5 | Canvas (`<canvas>`) | Draw graphics, build games, create visualizations (requires JavaScript) |
 | 6 | SVG (`<svg>`) | Inline vs `<img>`, basic shapes (circle, rect, path) — always sharp at any size |
-| 7 | Drag and Drop API | `draggable` attribute and drag events — make elements movable |
-| 8 | Web Storage | `localStorage` (persists) vs `sessionStorage` (tab only) — how HTML connects to client-side storage |
+| 7 | Dialogs (`<dialog>`) | Native modal and non-modal dialogs, form submission with `method="dialog"`, and focus behavior |
+| 8 | Popovers & `inert` | Declarative popovers, `popovertarget`, and temporarily making background UI non-interactive |
 | 9 | HTML Templates | `<template>` and `<slot>` — reusable markup for Web Components |
+| 10 | Progressive Enhancement | `hidden`, `noscript`, fallback content, and letting HTML work before JavaScript loads |
 
 > [!WARNING]
 > Always use the `sandbox` attribute on iframes to restrict what embedded content can do. Without it, embedded pages can run scripts, submit forms, and more.
@@ -534,11 +535,11 @@ Avoid these pitfalls that trip up most beginners:
 |---|---------|----------------|-----------------|
 | 1 | Skipping `alt` on images | Breaks accessibility; screen readers can't describe the image | Always add descriptive `alt` text |
 | 2 | Using `<br>` for spacing | That's what CSS margin/padding is for | Use CSS for spacing between elements |
-| 3 | Multiple `<h1>` tags | Confuses search engines about the page topic | One `<h1>` per page, use `<h2>`-`<h6>` for subsections |
+| 3 | Using headings for appearance instead of structure | Breaks document hierarchy and confuses assistive technology | Use headings to reflect content structure, then style them with CSS |
 | 4 | Using `<div>` for everything | Loses semantic meaning; hurts SEO and accessibility | Use `<nav>`, `<main>`, `<section>`, `<article>`, etc. |
 | 5 | Forgetting `<!DOCTYPE html>` | Browser enters "quirks mode" and renders things differently | Always start with `<!DOCTYPE html>` |
 | 6 | Inline styles everywhere | Makes code unmaintainable and hard to update | Use external CSS files |
-| 7 | Not closing tags | Causes unpredictable rendering and nesting issues | Close every tag (or use self-closing syntax) |
+| 7 | Leaving non-void elements unclosed | Causes broken nesting and confusing markup; void elements like `<img>` do not need closing tags | Close non-void elements properly and learn which elements are void |
 | 8 | Using `<table>` for layout | Tables are for data; layout should use CSS | Use CSS Flexbox or Grid for layout |
 | 9 | Skipping `<label>` on forms | Inputs become unusable for screen readers and harder to click | Wrap or link every input with a `<label>` |
 | 10 | Ignoring mobile viewport | Page won't scale properly on phones | Add `<meta name="viewport" content="width=device-width, initial-scale=1.0">` |
@@ -547,67 +548,7 @@ Avoid these pitfalls that trip up most beginners:
 
 ## Interview Questions
 
-Test your HTML knowledge with these commonly asked questions:
-
-<details>
-<summary><strong>Beginner Level</strong></summary>
-
-1. **What does HTML stand for?**
-   - HyperText Markup Language
-
-2. **What is the difference between an element and a tag?**
-   - A tag is the markup syntax (`<p>`, `</p>`). An element is the tag plus its content (`<p>Hello</p>`).
-
-3. **What is the purpose of the `alt` attribute in images?**
-   - Provides alternative text for screen readers and displays when the image fails to load.
-
-4. **What's the difference between `<div>` and `<span>`?**
-   - `<div>` is block-level (takes full width). `<span>` is inline (takes only needed width).
-
-5. **What are empty/void elements? Name a few.**
-   - Elements that don't have closing tags: `<br>`, `<hr>`, `<img>`, `<input>`, `<meta>`, `<link>`.
-
-</details>
-
-<details>
-<summary><strong>Intermediate Level</strong></summary>
-
-1. **What is semantic HTML? Why does it matter?**
-   - Using HTML elements that clearly describe their meaning (like `<nav>`, `<article>`, `<footer>`) instead of generic `<div>`. It improves accessibility, SEO, and code readability.
-
-2. **What is the difference between `<strong>` and `<b>`?**
-   - `<strong>` indicates importance (semantic). `<b>` is just visual boldness (presentational). Screen readers emphasize `<strong>`.
-
-3. **Explain the difference between `GET` and `POST` form methods.**
-   - `GET` appends data to the URL (visible, bookmarkable, limited size). `POST` sends data in the request body (hidden, no size limit, for sensitive data).
-
-4. **What is the `data-*` attribute used for?**
-   - Storing custom data on HTML elements that can be accessed via JavaScript using `element.dataset`.
-
-5. **What's the difference between `defer` and `async` on script tags?**
-   - Both download in parallel with HTML parsing. `defer` executes after parsing is complete (in order). `async` executes immediately when downloaded (no guaranteed order).
-
-</details>
-
-<details>
-<summary><strong>Advanced Level</strong></summary>
-
-1. **What are ARIA roles and when should you use them?**
-   - ARIA roles define what an element is or does for assistive technologies. Use them only when native HTML elements can't provide the needed semantics (e.g., custom widgets).
-
-2. **How do `srcset` and `sizes` work for responsive images?**
-   - `srcset` provides multiple image sources with their widths. `sizes` tells the browser how wide the image will display at different viewport sizes. The browser picks the best image automatically.
-
-3. **What is the Shadow DOM and how does it relate to `<template>`?**
-   - Shadow DOM encapsulates HTML, CSS, and JS inside a component. `<template>` holds markup that isn't rendered until cloned via JavaScript, often used with Shadow DOM for Web Components.
-
-4. **How would you optimize an HTML page for Core Web Vitals?**
-   - Specify `width`/`height` on images (reduces CLS), use `loading="lazy"` on below-fold images, preload critical resources, minimize render-blocking scripts with `defer`, use semantic HTML for faster parsing.
-
-5. **Explain the difference between `localStorage`, `sessionStorage`, and cookies.**
-   - `localStorage`: persists until cleared, ~5MB, client-side only. `sessionStorage`: cleared when tab closes, ~5MB, client-side only. Cookies: sent with every HTTP request, ~4KB, can be server-side, have expiry.
-
-</details>
+For the dedicated interview-prep version, see [HTML Interview Questions](../interviews/html.md).
 
 ---
 
@@ -669,7 +610,7 @@ Build these projects as you progress through the syllabus:
 | [MDN — Learn HTML](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content) | The gold standard. Structured curriculum from Mozilla with interactive examples. Start here for any topic |
 | [MDN — HTML Element Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) | Complete reference for every HTML element — attributes, examples, and browser support |
 | [web.dev — Learn HTML](https://web.dev/learn/html) | Google's modern HTML course. Covers document structure, meta tags, semantic HTML with real-world focus |
-| [W3Schools HTML Tutorial](https://www.w3schools.com/html/) | "Try It Yourself" editor on every page — great for quick experimentation |
+| [WAI Tutorials](https://www.w3.org/WAI/tutorials/) | Official W3C accessibility tutorials for page structure, forms, tables, images, and more |
 | [HTML Living Standard](https://html.spec.whatwg.org/) | The official spec. Use when you need the definitive answer on how something should work |
 
 ### Interactive Courses (Free)
