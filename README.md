@@ -26,15 +26,15 @@ Whether you're just starting out or picking up a new language, having a clear le
 | 11 | C | [View Syllabus](languages/c.md) | Available |
 | 12 | C++ | [View Syllabus](languages/cpp.md) | Available |
 | 13 | C# | [View Syllabus](languages/csharp.md) | Available |
-| 14 | Go | [View Syllabus](languages/go.md) | Coming Soon |
-| 15 | Rust | [View Syllabus](languages/rust.md) | Coming Soon |
-| 16 | Ruby | [View Syllabus](languages/ruby.md) | Coming Soon |
-| 17 | PHP | [View Syllabus](languages/php.md) | Coming Soon |
-| 18 | Swift | [View Syllabus](languages/swift.md) | Coming Soon |
-| 19 | Kotlin | [View Syllabus](languages/kotlin.md) | Coming Soon |
-| 20 | SQL | [View Syllabus](languages/sql.md) | Coming Soon |
-| 21 | Docker | [View Syllabus](languages/docker.md) | Coming Soon |
-| 22 | Git | [View Syllabus](languages/git.md) | Coming Soon |
+| 14 | Go | [View Syllabus](languages/go.md) | Available |
+| 15 | Rust | [View Syllabus](languages/rust.md) | Available |
+| 16 | Ruby | [View Syllabus](languages/ruby.md) | Available |
+| 17 | PHP | [View Syllabus](languages/php.md) | Available |
+| 18 | Swift | [View Syllabus](languages/swift.md) | Available |
+| 19 | Kotlin | [View Syllabus](languages/kotlin.md) | Available |
+| 20 | SQL | [View Syllabus](languages/sql.md) | Available |
+| 21 | Docker | [View Syllabus](languages/docker.md) | Available |
+| 22 | Git | [View Syllabus](languages/git.md) | Available |
 
 ---
 
