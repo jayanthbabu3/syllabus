@@ -14,8 +14,7 @@ A complete, structured learning path for Java — your one-stop guide from your 
 - [What is Java?](#what-is-java)
 - [Why Learn Java in 2026?](#why-learn-java-in-2026)
 - [How Java Runs](#how-java-runs)
-- [Who This Syllabus Is For](#who-this-syllabus-is-for)
-- [Learning Paths](#learning-paths)
+- [Pick Your Path](#pick-your-path)
 - [Prerequisites](#prerequisites)
 - [How to Use This Syllabus](#how-to-use-this-syllabus)
 - [Phase 1: Getting Started](#phase-1-getting-started)
@@ -144,72 +143,37 @@ Understanding what happens between `javac` and `java` makes the rest of the syll
 
 ---
 
-## Who This Syllabus Is For
+## Pick Your Path
 
-| You Are | What You Get |
-|---------|--------------|
-| **Absolute beginner** — never coded before | Start at Phase 1. Each concept explained from scratch. Java is verbose but predictable — great teacher. |
-| **Coming from another language** (Python/JS/C#) | Skim Phase 1–3, focus on Phase 4 (OOP is non-negotiable in Java), Phase 7 (generics differ), Phase 10 (virtual threads), Phase 13 (frameworks). |
-| **Self-taught dev with gaps** | Use [Common Mistakes](#common-mistakes) as a self-audit. Re-do whichever phase you flunk. |
-| **Bootcamp grad / Junior dev** | Phases 7–11 are usually weak spots. Drill them hard. Then Phase 12 + 13 to be hireable. |
-| **Aspiring backend engineer** | Phases 1–11 → **Phase 12** (Spring Boot) → Phase 13/14 (frameworks + DB). |
-| **Aspiring Android dev** | Phases 1–10 → switch to the [Kotlin Syllabus](kotlin.md). Android is officially Kotlin-first now, but Java still ships. |
-| **Big Data engineer** | Phases 1–10 → Spark/Flink/Kafka tracks in Phase 13/15. |
-| **Mid / Senior dev preparing for interviews** | Phases 7, 10 (virtual threads!), 12, 13 + [Interview Questions](#interview-questions) + LeetCode in Java. |
-| **Frontend dev moving full-stack** | All phases → Phase 12 (Spring Boot) is the standard backend. |
+Java is huge — most people don't need every phase equally. Pick the track that matches your goal. Each one tells you what to focus on, what to skip, and what to do next.
 
----
+### Track 1 — Backend Engineer (16–22 weeks)
+**Goal:** ship REST APIs and microservices with Java + Spring Boot. The default track for most Java jobs.
 
-## Learning Paths
+Do every phase in order. Spend extra time on **OOP**, **Streams**, **Concurrency**, **Spring Boot**, and **Databases**. Pair with the [SQL Syllabus](sql.md) once you reach the Collections phase. After Spring Boot, deploy a real app to a public URL — that one project is the most hireable thing in your portfolio.
 
-Pick the path that matches your goal.
+### Track 2 — Spring Specialist (10–14 weeks, post-basics)
+**Goal:** you already know Java syntax and want to be the Spring person on your team.
 
-### Path A — Zero to First Backend Job (16–22 weeks)
-Fresher with no coding background, target: junior Java/Spring backend role.
+Skip the language fundamentals. Start at **Generics** and continue to the end, with extra depth on Spring Boot, the frameworks ecosystem, and databases. Build the microservices project and the Kafka event-driven project. Pair with the [Docker Syllabus](docker.md).
 
-```
-Phase 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9 → 10 → 11 → 12 → 13 → 14 → 15
-```
-- Build all 8 [Practice Projects](#practice-projects).
-- Pair with the [SQL Syllabus](sql.md) starting at Phase 6.
-- After Phase 12, deploy a real Spring Boot app to a public URL.
+### Track 3 — Android Developer (12–16 weeks)
+**Goal:** ship an Android app to the Play Store.
 
-### Path B — Spring Backend Specialist (10–14 weeks, post-Java basics)
-Already know Java syntax, target: Spring Boot expert.
+Cover all language phases through **Concurrency**, but **skip Spring Boot, frameworks, and databases**. Then move to the [Kotlin Syllabus](kotlin.md) — modern Android is Kotlin-first, and your Java foundation transfers directly.
 
-```
-Phase 7 → 8 → 9 → 10 → 11 → 12 → 13 → 14 → 15 (cloud)
-```
-- Deep on Spring (Boot, Data, Security, Cloud, GraphQL, Batch).
-- Pair with the [Docker Syllabus](docker.md).
-- Build Project 5 (microservices) + Project 8 (event-driven).
+### Track 4 — Big Data / Data Engineer (12–16 weeks)
+**Goal:** build pipelines with Spark, Flink, or Kafka.
 
-### Path C — Android (Java route, then Kotlin) (12–16 weeks)
-Goal: ship an Android app to Play Store.
+All language phases, with extra time on **Streams** and **Concurrency** — Spark APIs feel like supercharged Java streams. Skip Spring Boot. In the Frameworks Ecosystem phase, focus on the Big Data section. Plan to add Scala or Kotlin afterwards — most Spark code is in those.
 
-```
-Phase 1 → 2 → 3 → 4 → 6 → 7 → 8 → 9 → 10 → switch to Kotlin Syllabus
-```
-- Skip Spring (Phase 12). Skip big data.
-- Move to [Kotlin Syllabus](kotlin.md) and Android documentation as soon as Java basics solid.
+### Track 5 — Interview Prep (4–6 weeks)
+**Goal:** you already know Java and have an interview coming up.
 
-### Path D — Big Data / Data Engineering (12–16 weeks)
-Apache Spark, Flink, Kafka — all run on the JVM.
+Drill: **OOP**, **Collections**, **Generics**, **Streams**, **Concurrency** (especially virtual threads + the JMM). Re-read [Common Mistakes](#common-mistakes) and the [Interview Questions](#interview-questions). Solve ~100 LeetCode problems in Java. Be ready to talk thread safety, HashMap internals, immutability, and generics edge cases (PECS).
 
-```
-Phase 1 → 2 → 3 → 4 → 6 → 7 → 8 → 9 → 10 → 11 → 14 (DBs) → 13 (Big Data section) → 15
-```
-- Master streams + collections (Phase 6, 8). Spark APIs feel like supercharged streams.
-- Add Scala or Kotlin for Spark idioms.
-
-### Path E — Interview Prep (4–6 weeks)
-Already know Java, need to crack interviews.
-
-```
-Phase 4 → 6 → 7 → 8 → 10 → Common Mistakes → Interview Questions → LeetCode in Java
-```
-- Solve 100 LeetCode problems in Java (mix of easy + medium).
-- Drill: thread safety, hashmap internals, immutability, generics, streams.
+> [!TIP]
+> Whichever track you pick, read **Phase 1 (Getting Started)** and **Phase 4 (OOP)** carefully — every other phase assumes them.
 
 ---
 
