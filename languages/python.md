@@ -14,8 +14,7 @@ A complete, structured learning path for Python — your one-stop guide from you
 - [What is Python?](#what-is-python)
 - [Why Learn Python in 2026?](#why-learn-python-in-2026)
 - [How Python Runs](#how-python-runs)
-- [Who This Syllabus Is For](#who-this-syllabus-is-for)
-- [Learning Paths](#learning-paths)
+- [Pick Your Path](#pick-your-path)
 - [Prerequisites](#prerequisites)
 - [How to Use This Syllabus](#how-to-use-this-syllabus)
 - [Phase 1: Getting Started](#phase-1-getting-started)
@@ -131,73 +130,42 @@ Understanding what happens when you type `python script.py` makes the rest of th
 
 ---
 
-## Who This Syllabus Is For
+## Pick Your Path
 
-| You Are | What You Get |
-|---------|--------------|
-| **Absolute beginner** — never coded before | Start at Phase 1. Each concept is explained from scratch. Python is *the* best first language. |
-| **Coming from another language** (JS / Java / C++) | Skim Phase 1–4, focus on Phase 5 (Pythonic data structures), Phase 8 (OOP differs), Phase 9 (decorators/generators are unique), Phase 10 (the GIL). |
-| **Self-taught dev with gaps** | Use [Common Mistakes](#common-mistakes) as a self-audit, then re-do the failing phase. |
-| **Bootcamp grad / Junior dev** | Phases 9, 10, 12 are usually weak spots. Then pick a specialization (Phase 13 web, Phase 14 data/ML). |
-| **Aspiring data scientist** | Phases 1–9 fast → **Phase 14** is your home. Pair with a math/stats course. |
-| **Aspiring ML / AI engineer** | Phases 1–10 → **Phase 14** (PyTorch + LLM SDKs). Build the AI capstone project. |
-| **Backend / Web dev moving to Python** | Phases 1–9 → **Phase 13** (FastAPI + SQLAlchemy). |
-| **DevOps / automation** | Phases 1–7 → Phase 11 (stdlib) + Phase 12 (tooling). Skip data/web phases. |
-| **Mid / Senior dev preparing for interviews** | Phase 9 + Phase 10 + [Interview Questions](#interview-questions). |
+Python is huge — most people don't need every phase equally. Pick the track that matches your goal. Each one tells you what to focus on, what to skip, and what to do next.
 
----
+### Track 1 — Backend / API Engineer (12–16 weeks)
+**Goal:** ship REST or GraphQL APIs with Python (FastAPI, Django, or Flask).
 
-## Learning Paths
+Do all language phases, with extra time on **OOP**, **Concurrency** (async!), **Tooling**, and **Web Development**. Master FastAPI + SQLAlchemy + Alembic + Pydantic. Build the production REST API project end-to-end and deploy it. Pair with the [SQL Syllabus](sql.md) and the [Docker Syllabus](docker.md).
 
-Pick the path that matches your goal. Each path tells you which phases to do, in what order, and roughly how long it takes.
+### Track 2 — Data Scientist (12–16 weeks)
+**Goal:** get hired analyzing data and building models.
 
-### Path A — Zero to First Job (16–20 weeks)
-Fresher with no coding background, target: junior backend / data role.
+Cover all language fundamentals through **Advanced Python**, then live in the **Data Science, ML & AI** phase. Skip the web-development phase entirely. Pair with a math/stats course (linear algebra, probability, statistics). Build the Data Analysis Notebook and the ML Trainer projects — both go on your portfolio.
 
-```
-Phase 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9 → 12 → 13 → 15
-```
-- Build Practice Projects 1, 2, 3, 5.
-- After Phase 9, start your specialization (web or data).
-- Push every project to GitHub with a README.
+### Track 3 — AI / LLM Engineer (10–14 weeks, post-basics)
+**Goal:** build LLM-powered apps, agents, and RAG systems. The hottest Python specialization in 2026.
 
-### Path B — Data Scientist Track (12–16 weeks)
-Goal: get hired analyzing data, building models.
+Make sure you have Python basics, then go deep on **Concurrency** (every LLM SDK is async-first), **Tooling**, **Web Development** (FastAPI), and the LLM section of **Data Science, ML & AI**. Pick one provider — [Anthropic](https://docs.anthropic.com/) or [OpenAI](https://platform.openai.com/docs/) — and learn it deeply. Build the AI Chatbot with RAG capstone — that single project is the most hireable demo today.
 
-```
-Phase 1 → 2 → 3 → 5 → 6 → 7 → 8 → 9 → 11 → 14 → 15 (data specialization)
-```
-- Skip Phase 13 (web). Focus all project effort on Phase 14.
-- Pair with a math/stats course (linear algebra, probability, statistics).
-- Build Project 6 (Data Analysis Notebook) and Project 7 (ML Trainer).
+### Track 4 — DevOps / Automation (6–10 weeks)
+**Goal:** replace bash scripts with Python.
 
-### Path C — AI / LLM Engineer (10–14 weeks, post-Python basics)
-Already know Python basics, want to build with LLMs.
+Focus on language basics through **File I/O & Error Handling**, then jump to the **Standard Library** (`pathlib`, `subprocess`, `argparse`/`typer`, `paramiko`, `logging`) and **Tooling**. Skip OOP-heavy phases, async, web dev, and data science. The shortest path with the highest "I'm getting paid for this tomorrow" return.
 
-```
-Phase 9 → 10 (async!) → 12 → 13 (FastAPI) → 14 (LLM SDKs + RAG) → Project 8 (AI capstone)
-```
-- Master `async`/`await` — every LLM SDK is async-first.
-- Learn one LLM provider deeply ([Anthropic](https://docs.anthropic.com/) or [OpenAI](https://platform.openai.com/docs/)).
-- Build Project 8 (AI Chatbot with RAG) — most hireable demo in 2026.
+### Track 5 — Beginner to First Job (16–20 weeks)
+**Goal:** you've never coded. Target a junior backend or data role.
 
-### Path D — Backend / API Engineer (12–16 weeks)
-Goal: ship production REST/GraphQL APIs with Python.
+Start at the very beginning, do every phase in order, build the practice projects as you go. Around Phase 9 (Advanced), pick a specialization — web (Track 1) or data (Track 2) — and follow that track for the back half. Push every project to GitHub with a proper README.
 
-```
-All phases 1–13 → Project 5 (FastAPI + auth + DB) → Phase 15 (deployment)
-```
-- Master FastAPI + SQLAlchemy + Alembic + Pydantic.
-- Pair with the [SQL Syllabus](sql.md) and [Docker Syllabus](docker.md).
+### Track 6 — Interview Prep (3–5 weeks)
+**Goal:** you already know Python and have an interview coming up.
 
-### Path E — DevOps / Automation (6–10 weeks)
-Replace bash with Python.
+Drill: **Data Types**, **Data Structures**, **OOP**, **Advanced Python** (decorators, generators, the GIL), **Concurrency**. Re-read [Common Mistakes](#common-mistakes) and the [Interview Questions](#interview-questions). Be ready to talk mutable defaults, the GIL, `==` vs `is`, async/await, decorators. Solve ~2 LeetCode (Easy → Medium) per day in Python.
 
-```
-Phase 1 → 2 → 3 → 4 → 5 → 7 → 11 → 12
-```
-- Focus on `pathlib`, `subprocess`, `argparse`/`typer`, `paramiko`, logging.
-- Skip Phases 8–10 unless your team uses them.
+> [!TIP]
+> Whichever track you pick, **Phase 5 (Data Structures)** and **Phase 9 (Advanced Python)** are the two phases every track depends on — read them carefully.
 
 ---
 

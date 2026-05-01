@@ -13,8 +13,7 @@ A complete, structured learning path for JavaScript — your one-stop guide from
 - [What is JavaScript?](#what-is-javascript)
 - [Why Learn JavaScript in 2026?](#why-learn-javascript-in-2026)
 - [How JavaScript Runs](#how-javascript-runs)
-- [Who This Syllabus Is For](#who-this-syllabus-is-for)
-- [Learning Paths](#learning-paths)
+- [Pick Your Path](#pick-your-path)
 - [Prerequisites](#prerequisites)
 - [How to Use This Syllabus](#how-to-use-this-syllabus)
 - [Phase 1: Getting Started](#phase-1-getting-started)
@@ -101,57 +100,37 @@ All of these run JavaScript through an engine — **V8** (Chrome, Node, Edge), *
 
 ---
 
-## Who This Syllabus Is For
+## Pick Your Path
 
-| You Are | What You Get |
-|---------|--------------|
-| **Absolute beginner** — never coded before | Start at Phase 1. Each concept is explained from scratch with examples. No prior knowledge assumed beyond "I can use a computer". |
-| **Coming from another language** (Python/Java/C#) | Skim Phase 1–4, focus on Phase 5 (objects/arrays differ), Phase 8 (async is unique), Phase 13 (prototypes & `this`). |
-| **Self-taught dev with gaps** | Use the [Common Mistakes](#common-mistakes) section as a self-audit, then re-do whichever phase you flunk. |
-| **Bootcamp grad / Junior dev** | Phases 9, 12, 13, 15 are usually weak spots. Jump there first, then fill the rest. |
-| **Mid / Senior dev preparing for interviews** | Phase 13 (advanced) + [Interview Questions](#interview-questions) + Phase 16 (what's next). |
-| **Frontend dev moving full-stack** | Finish through Phase 15, then Phase 16's Node section. Pair with the [Node.js Syllabus](nodejs.md). |
+JavaScript is huge — most people don't need every phase equally. Pick the track that matches your goal. Each one tells you what to focus on, what to skip, and what to do next.
 
----
+### Track 1 — Frontend Engineer (14–18 weeks)
+**Goal:** ship UIs in the browser. The default track and the highest-volume entry point into web dev.
 
-## Learning Paths
+Do every phase in order. Spend extra time on **DOM Manipulation**, **Async**, **ES6+**, **Tooling**, and **Browser APIs**. After ES6+, start the [React Syllabus](react.md) in parallel — by the time you finish, you'll be ready for a junior role. Build all 8 [Practice Projects](#practice-projects) and deploy them.
 
-Pick the path that matches your goal. Each path tells you which phases to do, in what order, and roughly how long it takes.
+### Track 2 — Full-Stack JavaScript (16–20 weeks)
+**Goal:** build and ship complete apps — frontend, backend, database.
 
-### Path A — Zero to First Job (14–18 weeks)
-Fresher with no coding background, target: junior frontend role.
+All phases, then continue straight to the [Node.js Syllabus](nodejs.md), [SQL Syllabus](sql.md), and [React Syllabus](react.md). Pair with the [Docker Syllabus](docker.md) once you're comfortable. Same hireability as the frontend track but with twice the surface area.
 
-```
-Phase 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9 → 10 → 11 → 12 → 15 → Phase 16 (TypeScript + React)
-```
-- Build all 8 [Practice Projects](#practice-projects).
-- Skip Phase 13 (advanced) until after first 2 projects, come back to it.
-- After Phase 9, start the [React Syllabus](react.md) in parallel.
+### Track 3 — Modernize Old Skills (3–5 weeks)
+**Goal:** you wrote jQuery / ES5 code years ago and want to catch up to 2026.
 
-### Path B — Interview Prep (4–6 weeks)
-Already know JS basics, need to crack interviews.
+Focus on **Async** (promises + async/await), **ES6+** (modules, destructuring, optional chaining, `structuredClone`), **Advanced Concepts**, and **Browser APIs**. Replace your mental model of Webpack with Vite. Skim the rest as a refresher.
 
-```
-Phase 2 → 5 → 8 → 9 → 13 → 15 → Common Mistakes → Interview Questions
-```
-- Drill all advanced + interview questions.
-- Practice 2 LeetCode (Easy → Medium) per day in JavaScript.
-- Re-implement: `Promise.all`, `debounce`, `throttle`, `curry`, `bind`, deep clone from scratch.
+### Track 4 — Interview Prep (4–6 weeks)
+**Goal:** you already know JavaScript and have an interview coming up.
 
-### Path C — Modernize Old Skills (3–5 weeks)
-You wrote jQuery / ES5 code 5+ years ago and never caught up.
+Drill: **Data Types**, **Arrays & Objects**, **Async** (event loop!), **ES6+**, **Advanced Concepts** (prototypes, `this`, closures). Re-read [Common Mistakes](#common-mistakes) and the [Interview Questions](#interview-questions). Re-implement `Promise.all`, `debounce`, `throttle`, `curry`, `bind`, and deep clone from scratch. Solve ~2 LeetCode (Easy → Medium) per day in JavaScript.
 
-```
-Phase 9 → 8 → 10 → 13 → 14 → 16
-```
-- Focus on async/await, modules, optional chaining, `structuredClone`, modern build tools (Vite over Webpack).
+### Track 5 — Bridge to Frameworks (post-basics)
+**Goal:** you know vanilla JS; you want to learn React, Vue, or Angular.
 
-### Path D — Full-Stack JS (16–20 weeks)
-Goal: build & ship full apps end-to-end.
+Make sure **Functions**, **Arrays & Objects**, **Async**, **ES6+**, and **Advanced Concepts** are rock-solid (the framework will hide nothing). Skim the rest, then go straight into your chosen framework's syllabus. Don't skip closures, `this`, and the event loop — every framework bug eventually traces back to one of those.
 
-```
-All 16 phases → Node.js Syllabus → SQL Syllabus → React Syllabus → Docker Syllabus
-```
+> [!TIP]
+> Whichever track you pick, **Phase 4 (Functions)** and **Phase 7 (Async)** are the two phases every track depends on — read them carefully.
 
 ---
 
