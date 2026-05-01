@@ -13,8 +13,7 @@ A complete, structured learning path for HTML — your one-stop guide from your 
 - [What is HTML?](#what-is-html)
 - [Why Learn HTML in 2026?](#why-learn-html-in-2026)
 - [How a Browser Renders HTML](#how-a-browser-renders-html)
-- [Who This Syllabus Is For](#who-this-syllabus-is-for)
-- [Learning Paths](#learning-paths)
+- [Pick Your Path](#pick-your-path)
 - [Prerequisites](#prerequisites)
 - [How to Use This Syllabus](#how-to-use-this-syllabus)
 - [Phase 1: Getting Started](#phase-1-getting-started)
@@ -122,59 +121,37 @@ Every tag you write becomes a **node** in the DOM (Document Object Model). JavaS
 
 ---
 
-## Who This Syllabus Is For
+## Pick Your Path
 
-| You Are | What You Get |
-|---------|--------------|
-| **Absolute beginner** — never coded before | Start at Phase 1. Each tag is explained from scratch, every example runnable. |
-| **College student / fresher** prepping for first internship | Do all 11 phases. Build at least 3 projects. Pair with the [Interview Questions](../interviews/html.md). |
-| **Career switcher** moving into web dev | Skim Phase 1–4, focus on Phases 5 (forms), 6 (semantics), 9 (a11y), 10 (SEO) — these decide who is hired. |
-| **Self-taught dev with gaps** | Use [Common Mistakes](#common-mistakes) as a self-audit, then re-do whichever phase you flunk. |
-| **Backend / framework dev** weak on markup | Phase 6 (semantics) + Phase 9 (a11y) + Phase 10 (SEO/perf) — the highest-leverage 3 phases. |
-| **Email / template developer** | Phase 4 (tables — yes, real ones), Phase 7 (head/meta), Phase 8 (responsive images), Phase 9 (a11y for email). |
-| **Experienced frontend dev** | [Interview Questions](../interviews/html.md) + Phase 8 (`<dialog>`, popover, `inert`) + Phase 10 (Core Web Vitals, JSON-LD). |
+HTML is the foundation of every web role — but most people don't need every phase equally. Pick the track that matches your goal. Each one tells you what to focus on, what to skip, and what to do next.
 
----
+### Track 1 — Zero to First Web Page (1–2 weeks)
+**Goal:** put something on the internet, fast.
 
-## Learning Paths
+Cover the basics — **Getting Started**, **HTML Basics**, **Links/Images/Media**, **Lists & Tables**. Build the personal profile project. Deploy it for free on [GitHub Pages](https://pages.github.com/) or [Netlify Drop](https://app.netlify.com/drop). That's it — you have a real web page on the real internet.
 
-Pick the path that matches your goal. Each path tells you which phases to do, in what order, and roughly how long it takes.
+### Track 2 — Job-Ready Frontend (4–6 weeks)
+**Goal:** pass a junior frontend interview. The default track for most people.
 
-### Path A — Zero to First Web Page (1–2 weeks)
-You want to put something on the internet, fast.
+Do all 11 phases in order. Spend extra time on **Forms**, **Semantic HTML**, **Accessibility**, and **SEO/Performance** — these four decide who gets hired. Pair with the [CSS Syllabus](css.md) starting after Phase 4 and the [JavaScript Syllabus](javascript.md) after Phase 10. Run every project through the [W3C Validator](https://validator.w3.org/) and [Lighthouse](https://developer.chrome.com/docs/lighthouse/) — aim for 95+ on Accessibility and SEO.
 
-```
-Phase 1 → 2 → 3 → 4 → Project 1 (Profile site)
-```
-- Goal: a deployed personal page with your name, bio, links, photo.
-- Deploy free on [GitHub Pages](https://pages.github.com/) or [Netlify Drop](https://app.netlify.com/drop).
+### Track 3 — Accessibility & SEO Specialist (3–5 weeks)
+**Goal:** you know HTML basics — now stand out as the a11y/SEO person.
 
-### Path B — Job-Ready Frontend (4–6 weeks)
-Target: pass a junior frontend HTML/CSS/JS interview.
+Focus on **Semantic HTML**, **HTML Head + Resource Hints**, **Accessibility**, and **SEO/Structured Data/Performance**. Read the [WCAG 2.2 Quick Reference](https://www.w3.org/WAI/WCAG22/quickref/) cover-to-cover. Build the accessibility-first portal and the SEO blog projects. Both Lighthouse scores 95+ before calling them done.
 
-```
-All 10 phases → Phase 11 (CSS + JS bridge) → Build Projects 1, 3, 5, 7
-```
-- Pair with the [CSS Syllabus](css.md) starting after Phase 4.
-- Run every project through the [W3C Validator](https://validator.w3.org/) and [Lighthouse](https://developer.chrome.com/docs/lighthouse/).
+### Track 4 — Backend / Framework Dev Weak on Markup (2–3 weeks)
+**Goal:** you ship code but your HTML is shaky and your QA team complains.
 
-### Path C — Accessibility & SEO Specialist (3–5 weeks)
-You already know HTML basics; you want to stand out.
+The highest-leverage phases for you: **Semantic HTML**, **Forms**, **Accessibility**, and **SEO/Performance**. Skim the rest. Within a few weeks you'll be writing markup that passes a11y audits without thinking.
 
-```
-Phase 6 → 7 → 9 → 10 → Project 5 (a11y portal) → Project 4 (SEO blog)
-```
-- Read the [WCAG 2.2 Quick Reference](https://www.w3.org/WAI/WCAG22/quickref/).
-- Pass [Lighthouse](https://developer.chrome.com/docs/lighthouse/) Accessibility & SEO scores 95+.
+### Track 5 — Email / Template Developer (2–3 weeks)
+**Goal:** ship marketing emails that render in Outlook.
 
-### Path D — Email / Template Developer (2–3 weeks)
-HTML emails are still mostly inline-styled `<table>` layouts.
+HTML email is its own world — table-based layouts, inline CSS, no modern features. Cover **HTML Basics**, **Lists & Tables** (you actually use tables for layout here — the one exception), **HTML Head + Meta**, and **Accessibility**. Read [Can I Email](https://www.caniemail.com/) before using any modern feature. Test on [Litmus](https://www.litmus.com/) or [Email on Acid](https://www.emailonacid.com/).
 
-```
-Phase 1 → 2 → 3 → 4 (yes, tables for layout — exception for email!) → 7 → 9
-```
-- Practice on [Litmus](https://www.litmus.com/) or [Email on Acid](https://www.emailonacid.com/) free tiers.
-- Read [Can I Email](https://www.caniemail.com/) before using any modern feature.
+> [!TIP]
+> Whichever track you pick, **Phase 6 (Semantic HTML)** and **Phase 9 (Accessibility)** are the two phases every track depends on — read them carefully.
 
 ---
 
