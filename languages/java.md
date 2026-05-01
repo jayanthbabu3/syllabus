@@ -338,7 +338,7 @@ public class Main {                   // (2) Class — file name must match
 | `long` | 64-bit | ~±9.2 × 10¹⁸ | 0L | Big counters, timestamps |
 | `float` | 32-bit | ~±3.4 × 10³⁸ | 0.0f | Rarely (use `double`) |
 | `double` | 64-bit | ~±1.8 × 10³⁰⁸ | 0.0 | Default decimal |
-| `char` | 16-bit | UTF-16 code unit | ` ` | Single character |
+| `char` | 16-bit | UTF-16 code unit | `\u0000` | Single character |
 | `boolean` | JVM-defined | `true`/`false` | `false` | Yes/no |
 
 ### 2.2 — Topics
