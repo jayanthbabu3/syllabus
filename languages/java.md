@@ -268,16 +268,17 @@ Phase 4 → 6 → 7 → 8 → 10 → Common Mistakes → Interview Questions →
 
 > [!TIP]
 > Use **SDKMAN!** to install and switch between JDKs — it's the `nvm` of the Java world:
-> ```bash
-> # Install SDKMAN
-> curl -s "https://get.sdkman.io" | bash
->
-> # Install Java 21 LTS (Temurin distribution)
-> sdk install java 21.0.5-tem
->
-> # Switch versions per project
-> sdk use java 21.0.5-tem
-> ```
+
+```bash
+# Install SDKMAN
+curl -s "https://get.sdkman.io" | bash
+
+# Install Java 21 LTS (Temurin distribution)
+sdk install java 21.0.5-tem
+
+# Switch versions per project
+sdk use java 21.0.5-tem
+```
 
 <details>
 <summary><strong>Quick Reference: Anatomy of Hello World</strong></summary>
@@ -364,24 +365,26 @@ public class Main {                   // (2) Class — file name must match
 
 > [!WARNING]
 > **Never compare strings with `==`.** Use `.equals()` instead. `==` compares object references (memory addresses); `.equals()` compares actual content. Same for `Integer` boxes!
-> ```java
-> String a = new String("hello");
-> String b = new String("hello");
-> System.out.println(a == b);       // false — different objects
-> System.out.println(a.equals(b));  // true  — same content
->
-> Integer x = 200;
-> Integer y = 200;
-> System.out.println(x == y);       // false — outside the cache range -128..127!
-> ```
+
+```java
+String a = new String("hello");
+String b = new String("hello");
+System.out.println(a == b);       // false — different objects
+System.out.println(a.equals(b));  // true  — same content
+
+Integer x = 200;
+Integer y = 200;
+System.out.println(x == y);       // false — outside the cache range -128..127!
+```
 
 > [!CAUTION]
 > **Never use `float` or `double` for money.** Floating-point math is imprecise: `0.1 + 0.2 != 0.3`. Use `BigDecimal`:
-> ```java
-> BigDecimal a = new BigDecimal("0.1");
-> BigDecimal b = new BigDecimal("0.2");
-> BigDecimal sum = a.add(b);   // exactly 0.3
-> ```
+
+```java
+BigDecimal a = new BigDecimal("0.1");
+BigDecimal b = new BigDecimal("0.2");
+BigDecimal sum = a.add(b);   // exactly 0.3
+```
 
 <details>
 <summary><strong>Quick Reference: Mutable vs Immutable</strong></summary>
@@ -440,14 +443,15 @@ public class Main {                   // (2) Class — file name must match
 
 > [!TIP]
 > Use enhanced **switch expressions** (Java 14+) instead of classic switch statements. No `break` needed, no fall-through bugs, can return values:
-> ```java
-> String message = switch (statusCode) {
->     case 200 -> "OK";
->     case 404 -> "Not Found";
->     case 500 -> "Internal Server Error";
->     default  -> "Unknown: " + statusCode;
-> };
-> ```
+
+```java
+String message = switch (statusCode) {
+    case 200 -> "OK";
+    case 404 -> "Not Found";
+    case 500 -> "Internal Server Error";
+    default  -> "Unknown: " + statusCode;
+};
+```
 
 <details>
 <summary><strong>Quick Reference: Pattern Matching for Switch (Java 21+)</strong></summary>
@@ -520,21 +524,22 @@ double area(Shape s) {
 
 > [!IMPORTANT]
 > **Prefer composition over inheritance.** Deep inheritance trees are fragile.
-> ```java
-> // AVOID — inheritance chains
-> class Animal {}
-> class Dog extends Animal {}
-> class GuideDog extends Dog {}
->
-> // PREFER — composition + interfaces (and records when immutable)
-> interface Walkable { void walk(); }
-> interface Trainable { void train(); }
->
-> record Dog(String name) implements Walkable, Trainable {
->     public void walk()  { /* ... */ }
->     public void train() { /* ... */ }
-> }
-> ```
+
+```java
+// AVOID — inheritance chains
+class Animal {}
+class Dog extends Animal {}
+class GuideDog extends Dog {}
+
+// PREFER — composition + interfaces (and records when immutable)
+interface Walkable { void walk(); }
+interface Trainable { void train(); }
+
+record Dog(String name) implements Walkable, Trainable {
+    public void walk()  { /* ... */ }
+    public void train() { /* ... */ }
+}
+```
 
 <details>
 <summary><strong>Quick Reference: When to Use Which</strong></summary>
@@ -596,14 +601,15 @@ double area(Shape s) {
 
 > [!TIP]
 > Compile regex patterns *once* if you reuse them — saves significant time:
-> ```java
-> private static final Pattern EMAIL =
->     Pattern.compile("^[\\w.+-]+@[\\w-]+\\.[\\w.-]+$");
->
-> public boolean isValidEmail(String s) {
->     return EMAIL.matcher(s).matches();
-> }
-> ```
+
+```java
+private static final Pattern EMAIL =
+    Pattern.compile("^[\\w.+-]+@[\\w-]+\\.[\\w.-]+$");
+
+public boolean isValidEmail(String s) {
+    return EMAIL.matcher(s).matches();
+}
+```
 
 <details>
 <summary><strong>Learning Checklist</strong></summary>
@@ -651,16 +657,17 @@ double area(Shape s) {
 
 > [!TIP]
 > Use `List.of()`, `Map.of()`, `Set.of()` (Java 9+) for immutable collections. Use `new ArrayList<>(List.of(...))` if you need mutability:
-> ```java
-> // Immutable — cannot modify
-> var names  = List.of("Alice", "Bob", "Charlie");
-> var scores = Map.of("Alice", 95, "Bob", 87);
-> var tags   = Set.of("java", "spring", "backend");
->
-> // Mutable copy when you need to modify
-> var mutableNames = new ArrayList<>(List.of("Alice", "Bob"));
-> mutableNames.add("Charlie");
-> ```
+
+```java
+// Immutable — cannot modify
+var names  = List.of("Alice", "Bob", "Charlie");
+var scores = Map.of("Alice", 95, "Bob", 87);
+var tags   = Set.of("java", "spring", "backend");
+
+// Mutable copy when you need to modify
+var mutableNames = new ArrayList<>(List.of("Alice", "Bob"));
+mutableNames.add("Charlie");
+```
 
 <details>
 <summary><strong>Quick Reference: Decision Table</strong></summary>
@@ -724,12 +731,13 @@ double area(Shape s) {
 > **PECS — Producer Extends, Consumer Super:**
 > - `<? extends T>` = "produces" T (you read it). Adding is forbidden.
 > - `<? super T>` = "consumes" T (you write into it). Reading gives `Object`.
-> ```java
-> static <T> void copy(List<? extends T> src,   // produces T  (read)
->                      List<? super   T> dst) { // consumes T (write)
->     for (T item : src) dst.add(item);
-> }
-> ```
+
+```java
+static <T> void copy(List<? extends T> src,   // produces T  (read)
+                     List<? super   T> dst) { // consumes T (write)
+    for (T item : src) dst.add(item);
+}
+```
 
 <details>
 <summary><strong>Learning Checklist</strong></summary>
@@ -775,20 +783,23 @@ double area(Shape s) {
 
 > [!TIP]
 > Combine streams + lambdas for clean, declarative pipelines:
-> ```java
-> Map<String, List<String>> emailsByCountry = users.stream()
->     .filter(User::isActive)
->     .filter(u -> u.age() >= 18)
->     .collect(Collectors.groupingBy(
->         User::country,
->         Collectors.mapping(User::email, Collectors.toList())
->     ));
-> ```
+
+```java
+Map<String, List<String>> emailsByCountry = users.stream()
+    .filter(User::isActive)
+    .filter(u -> u.age() >= 18)
+    .collect(Collectors.groupingBy(
+        User::country,
+        Collectors.mapping(User::email, Collectors.toList())
+    ));
+```
+
 > Use `Optional` to make absence explicit:
-> ```java
-> Optional<User> user = repository.findById(id);
-> String displayName = user.map(User::name).orElse("Anonymous");
-> ```
+
+```java
+Optional<User> user = repository.findById(id);
+String displayName = user.map(User::name).orElse("Anonymous");
+```
 
 <details>
 <summary><strong>Quick Reference: Functional Interfaces</strong></summary>
@@ -852,16 +863,17 @@ double area(Shape s) {
 
 > [!WARNING]
 > **Never catch `Exception` or `Throwable` generically — it hides real bugs:**
-> ```java
-> // WRONG
-> try { processFile(path); }
-> catch (Exception e) { e.printStackTrace(); }
->
-> // CORRECT
-> try { processFile(path); }
-> catch (FileNotFoundException e) { log.warn("Missing file: {}", path); }
-> catch (IOException e)           { log.error("Read failed: {}", path, e); throw e; }
-> ```
+
+```java
+// WRONG
+try { processFile(path); }
+catch (Exception e) { e.printStackTrace(); }
+
+// CORRECT
+try { processFile(path); }
+catch (FileNotFoundException e) { log.warn("Missing file: {}", path); }
+catch (IOException e)           { log.error("Read failed: {}", path, e); throw e; }
+```
 
 <details>
 <summary><strong>Quick Reference: NIO.2 File Recipes</strong></summary>
@@ -940,35 +952,37 @@ try (Stream<Path> walk = Files.walk(Path.of("src"))) {
 
 > [!CAUTION]
 > **Never `synchronized` on a public field or `this`.** External code can lock on your instance and deadlock you:
-> ```java
-> // WRONG — anyone with the reference can lock you
-> public synchronized void transfer() { ... }
->
-> // CORRECT — private lock object, only you control it
-> private final Object lock = new Object();
->
-> public void transfer(Account from, Account to, int amt) {
->     synchronized (lock) {
->         from.debit(amt);
->         to.credit(amt);
->     }
-> }
-> ```
+
+```java
+// WRONG — anyone with the reference can lock you
+public synchronized void transfer() { ... }
+
+// CORRECT — private lock object, only you control it
+private final Object lock = new Object();
+
+public void transfer(Account from, Account to, int amt) {
+    synchronized (lock) {
+        from.debit(amt);
+        to.credit(amt);
+    }
+}
+```
 
 > [!IMPORTANT]
 > **In Java 21+, prefer virtual threads for I/O-bound work.** Thread pools become almost unnecessary:
-> ```java
-> try (var executor = Executors.newVirtualThreadPerTaskExecutor()) {
->     IntStream.range(0, 10_000).forEach(i ->
->         executor.submit(() -> {
->             var resp = httpClient.send(request, BodyHandlers.ofString());
->             process(resp);
->             return null;
->         })
->     );
-> }
-> // 10,000 concurrent HTTP calls — easy.
-> ```
+
+```java
+try (var executor = Executors.newVirtualThreadPerTaskExecutor()) {
+    IntStream.range(0, 10_000).forEach(i ->
+        executor.submit(() -> {
+            var resp = httpClient.send(request, BodyHandlers.ofString());
+            process(resp);
+            return null;
+        })
+    );
+}
+// 10,000 concurrent HTTP calls — easy.
+```
 
 <details>
 <summary><strong>Learning Checklist</strong></summary>
@@ -1113,19 +1127,20 @@ class UserServiceTest {
 
 > [!IMPORTANT]
 > **Use constructor injection.** It makes dependencies explicit, enables `final` fields, and tests don't need a Spring context:
-> ```java
-> // CORRECT — Spring auto-wires single constructor (no @Autowired needed)
-> @Service
-> public class UserService {
->     private final UserRepository repo;
->     private final EmailClient email;
->
->     public UserService(UserRepository repo, EmailClient email) {
->         this.repo = repo;
->         this.email = email;
->     }
-> }
-> ```
+
+```java
+// CORRECT — Spring auto-wires single constructor (no @Autowired needed)
+@Service
+public class UserService {
+    private final UserRepository repo;
+    private final EmailClient email;
+
+    public UserService(UserRepository repo, EmailClient email) {
+        this.repo = repo;
+        this.email = email;
+    }
+}
+```
 
 <details>
 <summary><strong>Quick Reference: A Tiny Production-Style REST Controller</strong></summary>
@@ -1509,10 +1524,11 @@ public class UserController {
 
 > [!CAUTION]
 > The N+1 problem strikes most junior backend devs. If you load 100 users and lazily access `user.getOrders()`, you fire 1 + 100 SQL queries. Fix:
-> ```java
-> @Query("SELECT u FROM User u JOIN FETCH u.orders WHERE u.active = true")
-> List<User> findActiveWithOrders();
-> ```
+
+```java
+@Query("SELECT u FROM User u JOIN FETCH u.orders WHERE u.active = true")
+List<User> findActiveWithOrders();
+```
 
 <details>
 <summary><strong>Quick Reference: A Spring Data JPA Repository</strong></summary>
