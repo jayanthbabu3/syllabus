@@ -4,7 +4,7 @@ A complete, structured learning path for JavaScript — from your first `console
 
 ![Difficulty: Beginner to Advanced](https://img.shields.io/badge/Difficulty-Beginner%20to%20Advanced-blue)
 ![Estimated Duration: 12-16 Weeks](https://img.shields.io/badge/Duration-12--16%20Weeks-blue)
-![Topics: 10 Phases](https://img.shields.io/badge/Topics-10%20Phases-orange)
+![Topics: 14 Phases](https://img.shields.io/badge/Topics-14%20Phases-orange)
 
 ---
 
@@ -15,12 +15,16 @@ A complete, structured learning path for JavaScript — from your first `console
 - [Phase 2: Operators & Control Flow](#phase-2-operators--control-flow)
 - [Phase 3: Functions](#phase-3-functions)
 - [Phase 4: Arrays & Objects](#phase-4-arrays--objects)
-- [Phase 5: DOM Manipulation](#phase-5-dom-manipulation)
-- [Phase 6: Asynchronous JavaScript](#phase-6-asynchronous-javascript)
-- [Phase 7: ES6+ Modern JavaScript](#phase-7-es6-modern-javascript)
-- [Phase 8: Error Handling & Debugging](#phase-8-error-handling--debugging)
-- [Phase 9: Advanced Concepts](#phase-9-advanced-concepts)
-- [Phase 10: Browser APIs & Real-World JS](#phase-10-browser-apis--real-world-js)
+- [Phase 5: Strings & Regular Expressions](#phase-5-strings--regular-expressions)
+- [Phase 6: DOM Manipulation](#phase-6-dom-manipulation)
+- [Phase 7: Asynchronous JavaScript](#phase-7-asynchronous-javascript)
+- [Phase 8: ES6+ Modern JavaScript](#phase-8-es6-modern-javascript)
+- [Phase 9: Tooling & Package Management](#phase-9-tooling--package-management)
+- [Phase 10: Error Handling & Debugging](#phase-10-error-handling--debugging)
+- [Phase 11: Testing in JavaScript](#phase-11-testing-in-javascript)
+- [Phase 12: Advanced Concepts](#phase-12-advanced-concepts)
+- [Phase 13: Browser APIs & Real-World JS](#phase-13-browser-apis--real-world-js)
+- [Phase 14: Performance & Security](#phase-14-performance--security)
 - [Common Mistakes](#common-mistakes)
 - [Interview Questions](#interview-questions)
 - [Practice Projects](#practice-projects)
@@ -42,7 +46,7 @@ A complete, structured learning path for JavaScript — from your first `console
 
 ## Phase 1: Getting Started
 
-![Phase](https://img.shields.io/badge/Phase-1%2F10-blue)
+![Phase](https://img.shields.io/badge/Phase-1%2F14-blue)
 ![Difficulty: Beginner](https://img.shields.io/badge/Difficulty-Beginner-green)
 ![Time: 4-5 Hours](https://img.shields.io/badge/Time-4--5%20Hours-yellow)
 
@@ -88,7 +92,7 @@ A complete, structured learning path for JavaScript — from your first `console
 
 ## Phase 2: Operators & Control Flow
 
-![Phase](https://img.shields.io/badge/Phase-2%2F10-blue)
+![Phase](https://img.shields.io/badge/Phase-2%2F14-blue)
 ![Difficulty: Beginner](https://img.shields.io/badge/Difficulty-Beginner-green)
 ![Time: 6-8 Hours](https://img.shields.io/badge/Time-6--8%20Hours-yellow)
 
@@ -145,7 +149,7 @@ null === undefined // false
 
 ## Phase 3: Functions
 
-![Phase](https://img.shields.io/badge/Phase-3%2F10-blue)
+![Phase](https://img.shields.io/badge/Phase-3%2F14-blue)
 ![Difficulty: Beginner](https://img.shields.io/badge/Difficulty-Beginner-green)
 ![Time: 6-8 Hours](https://img.shields.io/badge/Time-6--8%20Hours-yellow)
 
@@ -214,7 +218,7 @@ const add = (a, b) => a + b;
 
 ## Phase 4: Arrays & Objects
 
-![Phase](https://img.shields.io/badge/Phase-4%2F10-blue)
+![Phase](https://img.shields.io/badge/Phase-4%2F14-blue)
 ![Difficulty: Intermediate](https://img.shields.io/badge/Difficulty-Intermediate-yellow)
 ![Time: 8-10 Hours](https://img.shields.io/badge/Time-8--10%20Hours-yellow)
 
@@ -266,9 +270,62 @@ const add = (a, b) => a + b;
 
 ---
 
-## Phase 5: DOM Manipulation
+## Phase 5: Strings & Regular Expressions
 
-![Phase](https://img.shields.io/badge/Phase-5%2F10-blue)
+![Phase](https://img.shields.io/badge/Phase-5%2F14-blue)
+![Difficulty: Intermediate](https://img.shields.io/badge/Difficulty-Intermediate-yellow)
+![Time: 5-7 Hours](https://img.shields.io/badge/Time-5--7%20Hours-yellow)
+
+> Master string manipulation and pattern matching with Regular Expressions.
+
+| # | Topic | What You'll Learn |
+|:-:|-------|-------------------|
+| 1 | String Methods | `slice()`, `substring()`, `substr()` (deprecated) — extract parts of a string |
+| 2 | String Searching | `indexOf()`, `lastIndexOf()`, `includes()`, `startsWith()`, `endsWith()` |
+| 3 | String Modification | `replace()`, `replaceAll()`, `trim()`, `toUpperCase()`, `toLowerCase()`, `split()` |
+| 4 | Regex Introduction | `/pattern/flags` — what regular expressions are and why they are powerful |
+| 5 | Character Classes | `\d` (digits), `\w` (word characters), `\s` (whitespace), `.` (any character) and their negations (`\D`, `\W`, `\S`) |
+| 6 | Quantifiers | `*` (0 or more), `+` (1 or more), `?` (0 or 1), `{n,m}` (specific range) |
+| 7 | Anchors & Boundaries| `^` (start of string), `$` (end of string), `` (word boundary) |
+| 8 | Groups & Alternation| `(abc)` for capturing groups, `(?:abc)` for non-capturing, `a\|b` for OR logic |
+| 9 | Regex Methods | `regex.test(str)` returns boolean, `regex.exec(str)` returns array or null |
+| 10 | String Methods + Regex| `str.match(regex)`, `str.replace(regex, newSubstr)` |
+
+> [!TIP]
+> Use tools like [Regex101](https://regex101.com/) to build and test your regular expressions. It breaks down exactly what your pattern is matching step-by-step.
+
+<details>
+<summary><strong>Quick Reference: Common Regex Patterns</strong></summary>
+
+```javascript
+// Email Validation (basic)
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+emailRegex.test("user@example.com"); // true
+
+// Phone Number (10 digits)
+const phoneRegex = /^\d{10}$/;
+phoneRegex.test("1234567890"); // true
+
+// Password (min 8 chars, 1 letter, 1 number)
+const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+```
+
+</details>
+
+<details>
+<summary><strong>Learning Checklist</strong></summary>
+
+- [ ] Write a function that capitalizes the first letter of every word in a string
+- [ ] Validate an email address using `regex.test()`
+- [ ] Use `String.prototype.replace()` with a regular expression to sanitize user input
+
+</details>
+
+---
+
+## Phase 6: DOM Manipulation
+
+![Phase](https://img.shields.io/badge/Phase-6%2F14-blue)
 ![Difficulty: Intermediate](https://img.shields.io/badge/Difficulty-Intermediate-yellow)
 ![Time: 8-10 Hours](https://img.shields.io/badge/Time-8--10%20Hours-yellow)
 
@@ -315,9 +372,9 @@ const add = (a, b) => a + b;
 
 ---
 
-## Phase 6: Asynchronous JavaScript
+## Phase 7: Asynchronous JavaScript
 
-![Phase](https://img.shields.io/badge/Phase-6%2F10-blue)
+![Phase](https://img.shields.io/badge/Phase-7%2F14-blue)
 ![Difficulty: Intermediate](https://img.shields.io/badge/Difficulty-Intermediate-yellow)
 ![Time: 8-10 Hours](https://img.shields.io/badge/Time-8--10%20Hours-yellow)
 
@@ -388,9 +445,9 @@ async function loadData(id) {
 
 ---
 
-## Phase 7: ES6+ Modern JavaScript
+## Phase 8: ES6+ Modern JavaScript
 
-![Phase](https://img.shields.io/badge/Phase-7%2F10-blue)
+![Phase](https://img.shields.io/badge/Phase-8%2F14-blue)
 ![Difficulty: Intermediate](https://img.shields.io/badge/Difficulty-Intermediate-yellow)
 ![Time: 6-8 Hours](https://img.shields.io/badge/Time-6--8%20Hours-yellow)
 
@@ -450,9 +507,45 @@ async function loadData(id) {
 
 ---
 
-## Phase 8: Error Handling & Debugging
+## Phase 9: Tooling & Package Management
 
-![Phase](https://img.shields.io/badge/Phase-8%2F10-blue)
+![Phase](https://img.shields.io/badge/Phase-9%2F14-blue)
+![Difficulty: Intermediate](https://img.shields.io/badge/Difficulty-Intermediate-yellow)
+![Time: 6-8 Hours](https://img.shields.io/badge/Time-6--8%20Hours-yellow)
+
+> Move beyond script tags in HTML and learn how real-world JS projects are built.
+
+| # | Topic | What You'll Learn |
+|:-:|-------|-------------------|
+| 1 | Node.js (Intro) | JavaScript outside the browser — why it's necessary for tooling |
+| 2 | NPM & Yarn | The Node Package Manager — installing third-party libraries |
+| 3 | `package.json` | `npm init` — the heart of any JS project, managing metadata and scripts |
+| 4 | Dependencies | `dependencies` vs `devDependencies` — what goes to production and what stays local |
+| 5 | Semantic Versioning | Major, Minor, Patch (`^` vs `~` in package.json) |
+| 6 | NPM Scripts | Automating tasks: `"start": "node server.js"`, `"dev": "vite"` |
+| 7 | Module Bundlers | Why we need Webpack, Vite, or Parcel (combining files, minification) |
+| 8 | Babel | Transpiling modern ES6+ JS down to older JS for browser compatibility |
+| 9 | ESLint | Catching syntax errors and enforcing coding standards |
+| 10 | Prettier | Automatic code formatting so your team's code looks consistent |
+
+> [!IMPORTANT]
+> Never commit your `node_modules/` folder to GitHub. Always add `node_modules` to your `.gitignore` file. Anyone cloning your repo just needs to run `npm install` to download them based on your `package.json`.
+
+<details>
+<summary><strong>Learning Checklist</strong></summary>
+
+- [ ] Initialize a new project with `npm init -y`
+- [ ] Install a library (like `date-fns` or `lodash`) and use it in your code
+- [ ] Set up a basic Vite project and run the development server
+- [ ] Configure ESLint and Prettier in a project
+
+</details>
+
+---
+
+## Phase 10: Error Handling & Debugging
+
+![Phase](https://img.shields.io/badge/Phase-10%2F14-blue)
 ![Difficulty: Intermediate](https://img.shields.io/badge/Difficulty-Intermediate-yellow)
 ![Time: 5-6 Hours](https://img.shields.io/badge/Time-5--6%20Hours-yellow)
 
@@ -490,9 +583,63 @@ async function loadData(id) {
 
 ---
 
-## Phase 9: Advanced Concepts
+## Phase 11: Testing in JavaScript
 
-![Phase](https://img.shields.io/badge/Phase-9%2F10-blue)
+![Phase](https://img.shields.io/badge/Phase-11%2F14-blue)
+![Difficulty: Intermediate](https://img.shields.io/badge/Difficulty-Intermediate-yellow)
+![Time: 6-8 Hours](https://img.shields.io/badge/Time-6--8%20Hours-yellow)
+
+> Ensure your code works as expected and doesn't break when you make changes.
+
+| # | Topic | What You'll Learn |
+|:-:|-------|-------------------|
+| 1 | The Testing Pyramid | Unit Tests (fast, many) vs Integration Tests vs E2E Tests (slow, few) |
+| 2 | Test Runners | Introduction to Jest and Vitest |
+| 3 | Anatomy of a Test | `describe()` blocks for grouping, `test()` or `it()` blocks for individual tests |
+| 4 | Assertions | `expect(value).toBe(true)`, `toEqual()`, `toBeTruthy()`, `toThrow()` |
+| 5 | Mocking Functions | `jest.fn()` — creating fake functions to track if they were called |
+| 6 | Mocking Modules | Replacing entire libraries (like Axios/Fetch) to prevent actual network requests during tests |
+| 7 | Spies | `jest.spyOn()` — tracking calls to an existing method without completely replacing it |
+| 8 | Testing Async Code | Returning promises, using `async/await` in tests, testing resolved/rejected states |
+| 9 | Test Coverage | Generating coverage reports (`--coverage`) to see what lines of code aren't tested |
+| 10 | TDD Basics | Test-Driven Development: Red (write failing test) → Green (write code to pass) → Refactor |
+
+> [!TIP]
+> When testing asynchronous code or promises in Jest/Vitest, always remember to `await` the expectation or return the promise. Otherwise, your test might complete before the async operation finishes, giving a false positive!
+
+<details>
+<summary><strong>Quick Reference: Basic Unit Test (Vitest/Jest)</strong></summary>
+
+```javascript
+import { add, getUser } from './math';
+
+describe('Math functions', () => {
+  test('add() should sum two numbers', () => {
+    expect(add(2, 3)).toBe(5);
+  });
+  
+  test('getUser() should throw on negative ID', () => {
+    expect(() => getUser(-1)).toThrow("Invalid ID");
+  });
+});
+```
+
+</details>
+
+<details>
+<summary><strong>Learning Checklist</strong></summary>
+
+- [ ] Write tests for a few simple utility functions (math, string manipulation)
+- [ ] Test a function that uses `fetch` by mocking the global fetch API
+- [ ] Run a test suite and generate a coverage report
+
+</details>
+
+---
+
+## Phase 12: Advanced Concepts
+
+![Phase](https://img.shields.io/badge/Phase-12%2F14-blue)
 ![Difficulty: Advanced](https://img.shields.io/badge/Difficulty-Advanced-red)
 ![Time: 8-10 Hours](https://img.shields.io/badge/Time-8--10%20Hours-yellow)
 
@@ -544,9 +691,9 @@ async function loadData(id) {
 
 ---
 
-## Phase 10: Browser APIs & Real-World JS
+## Phase 13: Browser APIs & Real-World JS
 
-![Phase](https://img.shields.io/badge/Phase-10%2F10-blue)
+![Phase](https://img.shields.io/badge/Phase-13%2F14-blue)
 ![Difficulty: Advanced](https://img.shields.io/badge/Difficulty-Advanced-red)
 ![Time: 6-8 Hours](https://img.shields.io/badge/Time-6--8%20Hours-yellow)
 
@@ -584,6 +731,48 @@ async function loadData(id) {
 - [ ] Build an app that saves data to `localStorage` and loads it on refresh
 - [ ] Implement lazy loading images with Intersection Observer
 - [ ] Create a simple drawing app with the Canvas API
+
+</details>
+
+---
+
+## Phase 14: Performance & Security
+
+![Phase](https://img.shields.io/badge/Phase-14%2F14-blue)
+![Difficulty: Advanced](https://img.shields.io/badge/Difficulty-Advanced-red)
+![Time: 6-8 Hours](https://img.shields.io/badge/Time-6--8%20Hours-yellow)
+
+> Optimize your JavaScript to run lightning fast and secure it against malicious attacks.
+
+| # | Topic | What You'll Learn |
+|:-:|-------|-------------------|
+| 1 | Critical Rendering Path | Parse HTML → DOM Tree → CSSOM → Render Tree → Layout → Paint |
+| 2 | Repaint vs Reflow | Changing layout (reflow) is expensive. Changing colors (repaint) is cheap. How to minimize reflows |
+| 3 | Debouncing | Wait until the user stops typing/scrolling before firing an expensive function |
+| 4 | Throttling | Fire a function at most once every X milliseconds during continuous actions |
+| 5 | Code Splitting | Loading only the JavaScript necessary for the current page to reduce initial load time |
+| 6 | `requestAnimationFrame` | The performant way to write JS animations synchronized with the display refresh rate |
+| 7 | XSS (Cross-Site Scripting) | How attackers inject malicious scripts, and why `innerHTML` is dangerous |
+| 8 | CSRF (Cross-Site Request Forgery) | Forcing users to execute unwanted actions, and how SameSite cookies help |
+| 9 | Content Security Policy | CSP headers — restricting where scripts can be loaded from |
+| 10 | Dependency Security | Using `npm audit` to find and fix vulnerable packages |
+
+> [!CAUTION]
+> **XSS Vulnerability Example**: Never trust user input.
+> ```javascript
+> // DANGEROUS: If user.bio is "<img src=x onerror=alert('Hacked')>", the script runs!
+> profileDiv.innerHTML = user.bio; 
+>
+> // SAFE: Treats the input strictly as text, not executable HTML.
+> profileDiv.textContent = user.bio;
+> ```
+
+<details>
+<summary><strong>Learning Checklist</strong></summary>
+
+- [ ] Implement a debounce function from scratch for a search input
+- [ ] Identify actions that cause a DOM reflow vs a repaint
+- [ ] Run `npm audit` on a project and resolve a vulnerability
 
 </details>
 
@@ -679,7 +868,7 @@ Test your JavaScript knowledge with these commonly asked questions:
 Build these projects as you progress through the syllabus:
 
 ### Project 1: Interactive Quiz App
-![Phase 1-3](https://img.shields.io/badge/After-Phase%201--3-green)
+![Phase 1-3](https://img.shields.io/badge/After-Phase%201--4-green)
 
 **What you'll build:** A multiple-choice quiz with score tracking, timer, and results screen. Questions stored in an array of objects.
 
@@ -688,7 +877,7 @@ Build these projects as you progress through the syllabus:
 ---
 
 ### Project 2: To-Do List with LocalStorage
-![Phase 4-5](https://img.shields.io/badge/After-Phase%204--5-green)
+![Phase 5-6](https://img.shields.io/badge/After-Phase%205--6-green)
 
 **What you'll build:** A full-featured to-do app: add, edit, delete, mark complete, filter (all/active/completed), persist to `localStorage`.
 
@@ -697,7 +886,7 @@ Build these projects as you progress through the syllabus:
 ---
 
 ### Project 3: Weather App (API)
-![Phase 6](https://img.shields.io/badge/After-Phase%206-yellow)
+![Phase 7](https://img.shields.io/badge/After-Phase%207-yellow)
 
 **What you'll build:** Search for a city, fetch real weather data from an API, display temperature, conditions, and a 5-day forecast. Handle loading and error states.
 
@@ -706,7 +895,7 @@ Build these projects as you progress through the syllabus:
 ---
 
 ### Project 4: GitHub Profile Finder
-![Phase 7-8](https://img.shields.io/badge/After-Phase%207--8-yellow)
+![Phase 8-10](https://img.shields.io/badge/After-Phase%208--10-yellow)
 
 **What you'll build:** Search GitHub usernames, display profile info, repos, and activity. Built with ES6 modules, classes, and proper error handling.
 
@@ -715,7 +904,7 @@ Build these projects as you progress through the syllabus:
 ---
 
 ### Project 5: Kanban Task Board
-![Phase 9-10](https://img.shields.io/badge/After-Phase%209--10-red)
+![Phase 11-14](https://img.shields.io/badge/After-Phase%2011--14-red)
 
 **What you'll build:** A drag-and-drop task board (like Trello) with columns (To Do, In Progress, Done), `localStorage` persistence, keyboard accessibility, and smooth animations.
 
